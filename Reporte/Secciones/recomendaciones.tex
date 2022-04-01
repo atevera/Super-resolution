@@ -1,0 +1,95 @@
+\\ Algunos comentarios sobre el uso de LaTeX
+
+IMPORTANTE: 
+Antes de hacer cambios en los archivos en común como: main, paquetes o bibliografía,
+favor de actualizar su copia del repositorio (pull) por si alguien ha hecho cambios.
+Posteriormente hacer los cambios necesarios y finalmente hacer la actualización
+al repositorio de Github (push). Esto para no tener problemas en el control 
+de la versión. Para el resto de archivos, digamos que individuales, no es necesario 
+hacerlo ya que sólo uno de nosotros realizará cambios en ellos. 
+
+Para importar imágenes pueden copiar el código de abajo y sustituir
+los campos según lo necesiten. Para este "ejemplo" pueden citar la 
+figura con el comando \ref{fig:flores}. 
+
+En realidad el comando \ref{} sirve para referenciar lo que sea: 
+ecuaciones (hay uno mejor para esto), figuras, tablas, secciones, etc. 
+Todo lo que le ponga una "etiqueta" con el comando \label{}. Por lo mismo,
+a modo de filtro es que tiene el prefijo "fig" para identificar que 
+se trata la etiqueta por ejemplo de una figura. 
+
+\begin{figure}[H]
+    \includegraphics[scale = \scaleFigures]{ Nombre de la figura }
+    \centering
+    \caption{ Título }
+    \label{fig:flores}
+\end{figure}
+
+Para las ecuaciones, pueden usarse estas dos estructuras {equation} o {align}.
+{Align} es más versátil y más funcional en mi opinión cuando se combina con 
+algunas estructuras matemáticas. Sin embargo {equation} también hace la chamba. 
+
+\begin{equation}
+    \label{eqn:x1}
+    x^2 = \frac{1}{2}
+\end{equation}
+
+\begin{align}
+    \label{eqn:x2}
+    x^2 = \frac{1}{2}
+\end{align}
+
+También está la estructura {aligned} pero sirve para estructuras en específico,
+creo, creoooo... que para hacer ecuaciones en multilínea. 
+
+Para citar la ecuación, sin importar la estructura que usen, les recomiendo que lo 
+hagan con \eqref{eqn:x1} porque con \ref{} estará sin paréntesis y pues no está 
+cool. De igual forma, las etiquetas tienen el prefijo "eqn" para identificar 
+que se tratan de ecuaciones. 
+
+-> Para todas las etiquetas, favor de usar títulos dentro de lo posible autodescriptibles. 
+
+
+Para tablas, les recomiendo este sitio: https://www.tablesgenerator.com/
+
+Ahí ustedes tendrán una interfaz gráfica para poder manipular datos y copiar
+directamente el código generado ya a su archivo, bastante útil y rápido. 
+
+Como ejemplo:
+
+\begin{table}[]
+    \begin{tabular}{|c|c|c|}
+    \hline
+    1  & Carga                  & \textgreater 100 kgf              \\ \hline
+    2  & Carrera (Stroke)       & aprox. 100 cm                     \\ \hline
+    3  & Tipo de tracción       & Cable dual, sencillo o con cadena \\ \hline
+    4  & Montaje                & Trolley                           \\ \hline
+    5  & Botonera de control    & Recta o Tipo teléfono             \\ \hline
+    6  & Montaje                & Manual                            \\ \hline
+    7  & Peso de balancín       & 20 - 30 kg                        \\ \hline
+    8  & Tipo de alimentación   & Eléctrica / Neumática             \\ \hline
+    9  & Alimentación eléctrica & 110 V                             \\ \hline
+    10 & Presión de trabajo     & 6 - 8 Bar                         \\ \hline
+    \end{tabular}
+\end{table}
+
+
+Agregar únicamente la letra "H" entre los corchetes y la etiqueta con \label{tb:tabla1} como ejemplo justo
+después de iniciar la estructura "table" (entre las líneas 53 y 54).
+
+
+Para citar alguna referencia pueden utilizar el comando \cite{}, por ejemplo como: 
+\cite{3DMotion} (del súper libroo). Antes de hacer esto, agregar la referencia en 
+el archivo bibliografia.tex y actualizar el repo. 
+
+La bibliografía está en BibTeX, así que pueden utilizar cualquier generador de
+formato o bien copiarlo de Google Scholar si lo están usando. 
+Como generadores de BibTeX les recomiendo ampliamente Zotero (incluso para la tesis, spoiler).
+
+Zotero: https://zbib.org/
+Ahí pueden elegir el formato de la bibliografía; para este caso será BibTeX generic citation style. 
+
+En fin, creo que es todo. Igual cualquier duda que tengan me comentan porfa con 
+toda la confianza. Si no le sé, le buscamos pero de que queda, queda :)
+
+Bai
