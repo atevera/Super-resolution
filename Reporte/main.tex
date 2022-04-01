@@ -1,6 +1,11 @@
 \documentclass[journal, onecolumn]{IEEEtran}
 \IEEEoverridecommandlockouts
 
+
+% En caso de requerir agregar algún paquete, favor de ponerlo en el archivo
+% "paquetes.tex". Ahí ya están algunos, los más comunes para importar imágenes, 
+% ecuaciones, símbolos e importar código. Según yo son los necesarios para hacer
+% el reporte. Pero de igual forma verificar y agregar según conveniencia. 
 \input{paquetes}
 
 \hypersetup{breaklinks=true}
@@ -21,6 +26,12 @@
 
 
 \graphicspath{ {../Imagenes/} }
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+\newcommand{\scaleFigures}{0.5}
 
 \begin{document}
     \bstctlcite{IEEEexample:BSTcontrol}
@@ -48,7 +59,14 @@
     % Comando para importar archivos en la plantilla.
     % Para ello deberá crear el archivo .tex en la carpeta "Secciones" 
     % Y posteriormente importarlo con el comando "input".
-        
+
+    % Cada que realice un cambio en el main favor de actualizarlo en el 
+    % repo para no tener problemas en el manejo de este archivo que todos
+    % moveremos. Lo mismo para el archivo paquetes.
+    
+    % Para el resto no es necesario. 
+
+
     \input{Secciones/Introduccion.tex}
     
 

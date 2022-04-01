@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/main"] 1648760264 "build/main.aux" "build/main.bbl" "build/main" 1648796024
+["bibtex build/main"] 1648760264 "build/main.aux" "build/main.bbl" "build/main" 1648800207
   "IEEEtran.bst" 0 -1 0 ""
   "bibliografia.bib" 1634588725 2839 2f1e1eeb4967796dfd6399f3493c31d0 ""
-  "build/main.aux" 1648796023 2119 6deb1052ef62870a3d8c67b45c76b317 "pdflatex"
+  "build/main.aux" 1648800206 2119 6deb1052ef62870a3d8c67b45c76b317 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1648796021 "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1648796024
+["pdflatex"] 1648800204 "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1648800207
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1648760655 117049 c83a9ef731164474226ce74cdfc2b877 ""
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648760856 10254077 f4904d94111f78528f22717916603424 ""
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -142,11 +142,11 @@
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623002090 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "IEEEtran.cls" 1440650924 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
   "Secciones/Introduccion.tex" 0 -1 0 ""
-  "build/main.aux" 1648796023 2119 6deb1052ef62870a3d8c67b45c76b317 "pdflatex"
+  "build/main.aux" 1648800206 2119 6deb1052ef62870a3d8c67b45c76b317 "pdflatex"
   "build/main.bbl" 1648760264 3710 a7ba20bcd920cbbec22000876f9e95ca "bibtex build/main"
-  "build/main.out" 1648796023 783 b5ebfb91406f6782b635f4c811faed23 "pdflatex"
-  "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" 1648796018 2019 eb91afe00272c9eb5fac1cdfd3fb6682 ""
-  "main.tex" 1648796018 2019 eb91afe00272c9eb5fac1cdfd3fb6682 ""
+  "build/main.out" 1648800206 783 b5ebfb91406f6782b635f4c811faed23 "pdflatex"
+  "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" 1648800201 2724 d49387d191d4bd30535a1fea0421be33 ""
+  "main.tex" 1648800201 2724 d49387d191d4bd30535a1fea0421be33 ""
   "paquetes.tex" 1634591090 978 25905f44988ffe5f94cf6076ee5aba89 ""
   (generated)
   "build/main.aux"
