@@ -987,6 +987,10 @@ INPUT .\Secciones\antecedentes_intro.tex
 INPUT Secciones\antecedentes_intro.tex
 INPUT .\Secciones\antecedentes_intro.tex
 INPUT Secciones\antecedentes_intro.tex
+INPUT .\Secciones\freeman_antecendentes.tex
+INPUT Secciones\freeman_antecendentes.tex
+INPUT .\Secciones\freeman_antecendentes.tex
+INPUT Secciones\freeman_antecendentes.tex
 INPUT g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.bbl
 INPUT g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.bbl
 INPUT g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.bbl
