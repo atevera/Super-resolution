@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.31)  1 APR 2022 02:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.31)  1 APR 2022 02:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -735,10 +735,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip82
 ))
 Package hyperref Info: Option `breaklinks' set `true' on input line 11.
- (g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.aux
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
-)
+ (g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 36.
@@ -816,53 +813,36 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 36.
 LaTeX Info: Redefining \pageref on input line 36.
 LaTeX Info: Redefining \nameref on input line 36.
- (g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.out) (g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
- (Secciones/Introduccion.tex) (g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.bbl
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 36.
- (C:\Users\Alejandro TeveraRuiz\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd
-File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
+ (Secciones/Introduccion.tex)
+No file main.bbl.
+[1{C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.aux
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
- (C:\Users\Alejandro TeveraRuiz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
- (C:\Users\Alejandro TeveraRuiz\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 36.
- (C:\Users\Alejandro TeveraRuiz\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
-File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
-)
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 36.
- (C:\Users\Alejandro TeveraRuiz\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
-File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
-)
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 36.
- (C:\Users\Alejandro TeveraRuiz\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
-File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-)) [1{C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.aux
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
-)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B5EBFB91406F6782B635F4C811FAED23;783.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  B6F04C3333591651BAC73CFFF182F007;685.
  ) 
 Here is how much of TeX's memory you used:
- 18835 strings out of 478582
- 293803 string characters out of 2837228
- 613411 words of memory out of 3000000
- 36693 multiletter control sequences out of 15000+600000
- 513517 words of font info for 108 fonts, out of 8000000 for 9000
+ 18634 strings out of 478582
+ 289798 string characters out of 2837228
+ 598754 words of memory out of 3000000
+ 36546 multiletter control sequences out of 15000+600000
+ 499686 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,6n,88p,318b,462s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 67i,6n,88p,318b,363s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Alejandro TeveraRuiz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Alejandro TeveraRuiz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Alejandro TeveraRuiz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Alejandro TeveraRuiz/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.pdf" (1 page, 56935 bytes).
+Output written on "g:\Mi unidad\Master\C2\Vision\Super-resolution\Reporte\build\main.pdf" (1 page, 42433 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
