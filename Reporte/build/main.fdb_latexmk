@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/main"] 1649013248 "build/main.aux" "build/main.bbl" "build/main" 1649014163
+["bibtex build/main"] 1649021216 "build/main.aux" "build/main.bbl" "build/main" 1649021557
   "./IEEEtran.bst" 1649013167 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "bibliografia.bib" 1649011955 334 07af1bf6a9800d77c128493d427b6301 ""
-  "build/main.aux" 1649014162 1879 1781899c083d137e755268f508784c2d "pdflatex"
+  "build/main.aux" 1649021556 1860 e46135de4d2902fc6f0d1bab224f8c38 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1649014159 "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649014163
+["pdflatex"] 1649021553 "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649021557
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1648764255 117049 c83a9ef731164474226ce74cdfc2b877 ""
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648764456 10254077 f4904d94111f78528f22717916603424 ""
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -120,12 +120,12 @@
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "IEEEtran.cls" 1440654524 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
   "Secciones/Introduccion.tex" 0 -1 0 ""
-  "Secciones/fr_antecedentes.tex" 1649014098 252 25ad9cc01285fa2bf4aded52bde819b3 ""
-  "build/main.aux" 1649014162 1879 1781899c083d137e755268f508784c2d "pdflatex"
-  "build/main.bbl" 1649013249 1073 a60b748a1533d135539969d290451964 "bibtex build/main"
-  "build/main.out" 1649014162 932 1d705dd8987f157cb77bf97fd9de0f00 "pdflatex"
-  "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" 1649014162 2753 584935cf15eaf4b1c7f653b116a6e623 ""
-  "main.tex" 1649014162 2753 584935cf15eaf4b1c7f653b116a6e623 ""
+  "Secciones/antecedentes_intro.tex" 1649021285 1039 b886fe621cf593e1af9a2836344f6ffc ""
+  "build/main.aux" 1649021556 1860 e46135de4d2902fc6f0d1bab224f8c38 "pdflatex"
+  "build/main.bbl" 1649021216 1073 a60b748a1533d135539969d290451964 "bibtex build/main"
+  "build/main.out" 1649021556 932 1d705dd8987f157cb77bf97fd9de0f00 "pdflatex"
+  "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" 1649021552 2756 6e7a7d41c06a9176cdd2fb1ebd9ffd67 ""
+  "main.tex" 1649021552 2756 6e7a7d41c06a9176cdd2fb1ebd9ffd67 ""
   "paquetes.tex" 1634594690 978 25905f44988ffe5f94cf6076ee5aba89 ""
   (generated)
   "build/main.aux"
