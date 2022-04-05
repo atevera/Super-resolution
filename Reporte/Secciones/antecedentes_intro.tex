@@ -37,14 +37,14 @@ pixeles que no se encuentran en la imagen visiblemente, pero que podrían aproxi
 al buscar que se mantenga una consistencia en la imagen modificada de acuerdo a la
 vecindad de los pixeles. 
 
-Esto permite proponer el uso de algoritmos de interpolación que buscan predecir los 
+Esto permite proponer el uso de algoritmos de interpolación que buscan predecir los  3
 pixeles vecinos y con ello aumentar la densidad de pixeles de la imagen de entrada. 
-Con base en \cite{interpolation_cambridge}, dichos algoritmos pueden agruparse en dos categorías: adaptativos y no adaptativos.
-Los primeros cambian dependiendo de lo que se está interpolando (bordes o texturas 
-suaves) pixel por pixel con el objetivo de minimizar los errores antiestéticos
-de los algoritmos de interpolación como el desenfoque o pérdida de detalles en 
-regiones evidentes. Ejemplos de ellos pueden ser los softwares de licencia como
-\emph{Qimage, PhotoZoom Pro, Genuine Fractals, etc}. 
+Con base en \cite{interpolation_cambridge}, dichos algoritmos pueden agruparse en dos
+categorías: adaptativos y no adaptativos. Los primeros cambian dependiendo de lo que
+se está interpolando (bordes o texturas suaves) pixel por pixel con el objetivo de
+minimizar los errores antiestéticos de los algoritmos de interpolación como el
+desenfoque o pérdida de detalles en regiones evidentes. Ejemplos de ellos pueden
+ser los softwares de licencia como \emph{Qimage, PhotoZoom Pro, Genuine Fractals, etc}. 
 
 Mientras que los métodos no adaptativos tratan todos los pixeles por igual
 dada la predicción de un pixel central de acuerdo a sus pixeles adyacentes. Esto 
@@ -72,6 +72,19 @@ Resolución}:
     de edición de imágenes, controladores de impresoras e interpolación en cámaras. 
 \end{itemize}
 
-
 \textbf{NOTA: Agregar comparativo de interpolaciones con un parche y escalado x2}
+
+Todos los interpoladores no adaptativos intentan encontrar un equilibrio óptimo
+entre tres efectos no deseados: halos de borde, desenfoque y \emph{aliasing}. En la 
+Figura \textbf{**} puede observarse el efecto para cada caso. 
+
+\textbf{NOTA: Imagen entre los tres efectos comentados al realizar interpolación}
+
+Incluso los interpoladores no adaptativos más avanzados siempre tienden a aumentar
+o disminuir algunos de los efectos a expensas de los otros dos, por lo tanto uno 
+será más evidente. 
+
+En contraste, los interpoladores adaptativos pueden o no producir los efectos 
+mencionados aunque generalmente inducen texturas que no son de la imagen o 
+pixeles extraños a pequeña escala.
 

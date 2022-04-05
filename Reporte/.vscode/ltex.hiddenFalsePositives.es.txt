@@ -2,3 +2,4 @@
 {"rule":"SOLO","sentence":"^\\QPor otro lado, el tercer método basado en un único frame o imagen busca aproximar las frecuencias altas (detalles) que no se encuentra en la entrada del algoritmo y que evidentemente no puede obtenerse sólo amplificando las frecuencias altas como lo que ocurre con el primero de los métodos.\\E$"}
 {"rule":"SOLO","sentence":"^\\QLos cuales consideran sólo a los pixeles\\E$"}
 {"rule":"SUPER","sentence":"^\\QA continuación se describirán algunos de los algoritmos no adaptativos para interpolación que serán utilizados en los diferentes métodos para Súper Resolución:\\E$"}
+{"rule":"SUPER","sentence":"^\\QComo puede observarse la interpolación soluciona parcialmente el problema de Súper Resolución pero tiene como consecuencia los efectos mencionados.\\E$"}

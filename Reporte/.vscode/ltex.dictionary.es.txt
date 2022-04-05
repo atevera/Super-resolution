@@ -3,3 +3,5 @@ frames
 spline
 bicúbica
 Bicúbica
+aliasing
+postprocesado

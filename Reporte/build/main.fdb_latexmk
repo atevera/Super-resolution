@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/main"] 1649144010 "build/main.aux" "build/main.bbl" "build/main" 1649144015
+["bibtex build/main"] 1649179816 "build/main.aux" "build/main.bbl" "build/main" 1649179822
   "./IEEEtran.bst" 1649013167 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "bibliografia.bib" 1649143999 1243 8ecc396399f67c21669fcc83cdc53710 ""
-  "build/main.aux" 1649144014 2492 d6c48f92bb04e75941bc212aaa51d264 "pdflatex"
+  "bibliografia.bib" 1649179440 1494 5d42d0b6f32f07b02d1085afe0bce58d ""
+  "build/main.aux" 1649179821 2552 6ef82067713d9c5226339611fec50201 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1649144011 "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649144015
+["pdflatex"] 1649179817 "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649179822
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1648764255 117049 c83a9ef731164474226ce74cdfc2b877 ""
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1632086958 11548 5a0368f522465b740d0cf9ccd9659e50 ""
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648764456 10254077 f4904d94111f78528f22717916603424 ""
@@ -146,12 +146,12 @@
   "Imagenes/fr_algoritmo.png" 1649044445 140544 15bde476227580f8e2ecd4565d2cc00c ""
   "Secciones/Introduccion.tex" 0 -1 0 ""
   "Secciones/SRGAN_Introduccion.tex" 1649142110 465 9a2315e34d6ef906a97a403ac62705c0 ""
-  "Secciones/antecedentes_intro.tex" 1649143999 4528 7d9abab5e8bfef93fc95c654dd0dbdec ""
-  "Secciones/freeman_antecendentes.tex" 1649134113 958 28ebdd3366dc644eb7f510ed47a0d3fd ""
+  "Secciones/antecedentes_intro.tex" 1649177875 5236 2b8939b235ed249892ba614a2355b277 ""
+  "Secciones/freeman_antecendentes.tex" 1649179809 2384 64c01a684d30f7714465a2290bb61b68 ""
   "build/../Imagenes//fr_algoritmo.png" 1649044445 140544 15bde476227580f8e2ecd4565d2cc00c ""
-  "build/main.aux" 1649144014 2492 d6c48f92bb04e75941bc212aaa51d264 "pdflatex"
-  "build/main.bbl" 1649144011 1506 b95041a4bceb6f77cb224649eb2a7ffb "bibtex build/main"
-  "build/main.out" 1649144014 1154 f767af8a24e56c0b0ff9de371dccf9e8 "pdflatex"
+  "build/main.aux" 1649179821 2552 6ef82067713d9c5226339611fec50201 "pdflatex"
+  "build/main.bbl" 1649179816 1709 c34f53fb1b3dc0a15c3f7240089f4131 "bibtex build/main"
+  "build/main.out" 1649179821 1154 f767af8a24e56c0b0ff9de371dccf9e8 "pdflatex"
   "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" 1649141247 2826 fcbf883f98a74d43004e2fb4a71a288d ""
   "main.tex" 1649141247 2826 fcbf883f98a74d43004e2fb4a71a288d ""
   "paquetes.tex" 1634594690 978 25905f44988ffe5f94cf6076ee5aba89 ""
