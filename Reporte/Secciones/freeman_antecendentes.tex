@@ -1,4 +1,4 @@
-\subsubsection{Example Based Super Resolution}
+\subsection{Example Based Super Resolution}
 \noindent
 Como puede observarse la interpolación soluciona parcialmente el problema de
 \emph{Súper Resolución}, pero tiene como consecuencia los efectos mencionados. En
@@ -29,14 +29,43 @@ entrada mediante un algoritmo de predicción.
     \label{fig:fr_algoritmo}
 \end{figure}
 
-El algoritmo de \emph{Súper Resolución} propuesto por \cite{freeman}
+\subsubsection{Diccionario}
+\noindent
+El algoritmo de \emph{Súper Resolución} \cite{freeman}
 opera bajo la premisa que la relación
 de predicción entre los parches de alta y baja calidad es independiente del 
 contraste de la imagen. Esto también resulta ventajoso, ya que el diccionario 
-no necesita ser de imagenes similares a las que se van a reconstruir para 
-mejorar la calidad de resolución similar a \cite{diccionario_shuji}.
-Esto resulta en un algoritmo general aplicable a cualquier tipo de imagen. 
+no necesita ser de imágenes similares a las que se van a reconstruir para 
+mejorar la calidad de resolución tal como comenta \cite{diccionario_shuji}.
+Esto resulta en un algoritmo general aplicable a cualquier tipo de imagen
+y escalable respecto al tamaño de la base de entrenamiento.
 
-Para alcanzar esta generalidad es necesario normalizar los pares de los parches
-mediante el promedio absoluto del parche de baja resolución correspondiente
-a través de cada canal de color.
+Desde el punto de vista de almacenamiento, los parches de baja resolución carecen 
+de detalle y por lo tanto predominan las frecuencias bajas, las cuales son 
+irrelevantes en su uso para la predicción de detalles y por lo tanto resulta
+información necesaria dentro del proceso. Por lo mismo, es aconsejable aplicar un filtro pasa-altas a cada parche 
+con el objetivo de dejar sólo la información útil para el algoritmo (detalles).
+
+Por otra parte, para que el diccionario sea funcional sin importar el 
+tipo de imagen a reconstruir, se busca normalizar cada pareja de parche con el 
+objetivo de mantener su relación intrínseca. De acuerdo con \cite{freeman}, 
+los parches de baja resolución se recomiendan con un tamaño de 7x7 pixeles
+mientras que los de alta calidad serán de 5x5 todos con centro en el mismo pixel
+para mantener la relación. Cabe destacar que la base de entrenamiento está en 
+RGB por lo que bastará con el procedimiento antes mencionado para guardar
+los pares de parches en algún archivo de fácil acceso. 
+
+\subsubsection{Algoritmo de predicción}
+\noindent
+Una vez teniendo el diccionario o base de entrenamiento donde se tendrá 
+toda la información del algoritmo es necesario establecer el algoritmo de 
+predicción para generar esos detalles no visibles en la imagen original.
+
+Para ello, es necesario pre-procesar la imagen de entrada (en baja resolución)
+mediante un filtrado pasa-altas para eliminar información innecesaria y posteriormente se realiza
+un proceso de escalado mediante algún algoritmo de interpolación para
+aumentar sus dimensiones y con ello la densidad de los pixeles tal como se presenta
+en la Figura \ref{fig:fr_algoritmo}. Observe que para ese punto, la imagen de entrada
+ya sólo cuenta con los pixeles que representan sus bordes o detalles que han sido
+escalados con el objetivo de tener una base a partir de la cual se va a reconstruir
+con más detalle la imagen de salida. 
