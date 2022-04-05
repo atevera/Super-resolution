@@ -1,12 +1,9 @@
 \subsection{Antecedentes SRGAN}
 
-Los métodos basados en predicciones fueron de los primeros en lograr resultados para la
-super resolución de una sola imagen (SISR), este filtrado mediante interpolaciones \emph{e.g} 
-linear, bicúbica o LANCZOS logra resultados muy rápido, pero tiene el problema
-de afectar demasiado la calidad de la imagen debido a la estimación de datos combinando. 
 
-A partir de estas aproximaciones, se comenzó a trabajar en propuestas que se basaran en 
-entrenamientos de pares, en el caso de Freeman \cite{freeman} tenemos el uso de parches de baja 
-resolución \emph{(LR)} que se sobreponen en imágenes de alta resolución \emph{(HR)}.
 
-Con estos antecedentes de redes neuronales
+Las GAN´s (Generative Adversarial Networks) son un tipo de redes cuyo funcionamiento está basado
+en la estimación de modelos generadores, esto es posible gracias al entrenamiento de un modelo 
+\emph{generador (G)} que obtiene la distribución de los datos y un modelo \emph{discriminador (D)} 
+el cual se encarga de estimar la probabilidad de que la muestra provenga del dataset de entrenamiento en lugar
+del modelo \emph{G}.\cite{GANs}
