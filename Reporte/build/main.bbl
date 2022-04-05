@@ -21,6 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{GANs}
+I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~Courville, and Y.~Bengio, ``Generative adversarial nets,'' \emph{ArXiv},
+  06 2014.
+
 \bibitem{freeman}
 W.~T. Freeman, T.~R. Jones, and E.~C. Pasztor, ``Example-based
   super-resolution,'' \emph{Image-Based Modeling, Rendering, and Lighting},
