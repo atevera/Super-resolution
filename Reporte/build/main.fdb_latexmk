@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/main"] 1649136944 "build/main.aux" "build/main.bbl" "build/main" 1649136946
+["bibtex build/main"] 1649137141 "build/main.aux" "build/main.bbl" "build/main" 1649137142
   "./IEEEtran.bst" 1649134023 60157 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "bibliografia.bib" 1649136607 744 453e2992d4a00a85bdc6f86dea0f1c00 ""
+  "bibliografia.bib" 1649137141 1030 9674c8262d1d3ce6ea9d725da007248c ""
   "build/main.aux" 1649136946 2126 08dcdc7cdddb506d021abfbd8c576263 "pdflatex"
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["pdflatex"] 1649136944 "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649136946
+  "build/main.blg"
+["pdflatex"] 1649136944 "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649137142
   "C:/Users/Alex/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1631153170 9714909 58c0d6ffbcc69e6b560cd500f4fd0785 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1649136942 116917 14e24354e353c7febdc9c0cd258270a4 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -127,13 +127,13 @@
   "Secciones/freeman_antecendentes.tex" 1649134023 959 b970cfa99b3954cfc25add280c47c74c ""
   "build/../Imagenes//fr_algoritmo.png" 1649134023 140544 15bde476227580f8e2ecd4565d2cc00c ""
   "build/main.aux" 1649136946 2126 08dcdc7cdddb506d021abfbd8c576263 "pdflatex"
-  "build/main.bbl" 1649136944 1073 a60b748a1533d135539969d290451964 "bibtex build/main"
+  "build/main.bbl" 1649137142 1073 a60b748a1533d135539969d290451964 "bibtex build/main"
   "build/main.out" 1649136946 931 d862378058328710038b586723db7468 "pdflatex"
   "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" 1649136902 2786 5efdc21d610096656a6e9f637cade9cf ""
   "main.tex" 1649136902 2786 5efdc21d610096656a6e9f637cade9cf ""
   "paquetes.tex" 1649011857 978 25905f44988ffe5f94cf6076ee5aba89 ""
   (generated)
-  "build/main.aux"
-  "build/main.out"
-  "build/main.log"
   "build/main.pdf"
+  "build/main.log"
+  "build/main.out"
+  "build/main.aux"
