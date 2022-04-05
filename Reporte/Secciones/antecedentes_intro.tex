@@ -11,10 +11,18 @@ de una imagen:
 
 Para el primero de ellos, se realiza una amplificación de las frecuencias altas
 (donde se encuentran los detalles existentes de la imagen). Resulta bastante 
-sencillo aunque como desventaja principal es que amplifica de igual manera el ruido
-presente en la imagen. 
-El segundo de los métodos considera un frame de alta resolución dado una sequencia
-de frames de baja resolución los cuales agregan definición al frame principal. Por
-otro lado, el tercer método permite aproximar la información de alta calidad que 
-no se encuentra en el frame o imagen original y que evidentemente no puede obtenerse
-sólo amplificando las frecuencias altas. 
+sencillo aunque como desventaja principal es que es más notorio el ruido presente
+en la imagen. 
+El segundo de los métodos considera un frame resultante de alta resolución dada
+una sequencia de frames de baja resolución los cuales agregan definición al frame
+principal. Por otro lado, el tercer método permite aproximar la información de
+alta calidad que no se encuentra en el frame o imagen original y que evidentemente
+no puede obtenerse sólo amplificando las frecuencias altas. 
+
+Por lo tanto se busca aumentar la densidad de pixeles de la imagen con el objetivo
+de hacer la imagen más grande y mejorar sus detalles a partir de la predicción de 
+pixeles que no se encuentran en la imagen visiblemente pero que podrían aproximarse
+al buscar que se mantenga una consistencia en la imagen modificada. 
+
+Esto permite proponer el uso de métodos de interpolación que buscan predecir los 
+pixeles vecinos y con ello aumentar la densidad de pixeles de la imagen de entrada. 
