@@ -26,6 +26,12 @@ I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
   A.~Courville, and Y.~Bengio, ``Generative adversarial nets,'' \emph{ArXiv},
   06 2014.
 
+\bibitem{interpolation_cambridge}
+\BIBentryALTinterwordspacing
+S.~McHugh, ``Digital image interpolation,'' 2005. [Online]. Available:
+  \url{https://www.cambridgeincolour.com/tutorials/image-interpolation.htm}
+\BIBentrySTDinterwordspacing
+
 \bibitem{freeman}
 W.~T. Freeman, T.~R. Jones, and E.~C. Pasztor, ``Example-based
   super-resolution,'' \emph{Image-Based Modeling, Rendering, and Lighting},

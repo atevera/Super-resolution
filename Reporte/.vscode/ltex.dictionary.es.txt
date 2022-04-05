@@ -1,0 +1,5 @@
+frame
+frames
+spline
+bicúbica
+Bicúbica
