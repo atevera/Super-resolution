@@ -1,11 +1,14 @@
 \subsection{SRGAN}
 
-
+El SISR (Single Image Super Resolution) es un problema inverso, \emph{it est}, que para una imagen de baja resolución puede haber muchas
+imágenes diferentes de alta resolución que le correspondan, esto basado en la interpretación del metodo utilizado, ya que
+el principio basico es añadir información para obtener imágenes de alta resolución.
 Las CNN presentan un gran avance en la reconstrucción de imágenes de baja resolución a alta resolución,
-sin embargo, debido a los métodos basados en interpolaciones 
+sin embargo, debido al escalado de la imagen o el hecho de que la imagen que se busca mejorar presenta grandes
+variaciones con respecto a las del dataset (\emph{Data Augmentation}) los resultados podrían ser no satisfactorios.
 
 
-Las GAN´s (Generative Adversarial Networks) son un tipo de entorno cuyo funcionamiento está basado
+Una alternativa quelas GAN´s (Generative Adversarial Networks) cuyo funcionamiento está basado
 en la estimación de modelos generadores, como mencionan Goodfellow et al. \cite{GANs}, esto es 
 posible gracias al entrenamiento simultáneo de dos modelos, uno \emph{generador (G)} que obtiene 
 la distribución de la entrada para generar datos falsos y el otro \emph{discriminador (D)} el cual se encarga de estimar 
