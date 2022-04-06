@@ -14,39 +14,38 @@ Database file #1: bibliografia.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** IEEEtran BST control entry "IEEEexample:BSTcontrol" detected.
-Warning--missing school in SRGAN_Tesis
 
 Done.
 You've used 6 entries,
             4087 wiz_defined-function locations,
-            852 strings with 8100 characters,
-and the built_in function-call counts, 2315 in all, are:
-= -- 164
+            854 strings with 8134 characters,
+and the built_in function-call counts, 2339 in all, are:
+= -- 170
 > -- 68
 < -- 0
 + -- 32
 - -- 16
-* -- 118
-:= -- 408
+* -- 117
+:= -- 417
 add.period$ -- 10
 call.type$ -- 6
 change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 183
-empty$ -- 203
+cite$ -- 6
+duplicate$ -- 184
+empty$ -- 204
 format.name$ -- 19
-if$ -- 496
+if$ -- 503
 int.to.chr$ -- 0
 int.to.str$ -- 5
 missing$ -- 40
 newline$ -- 40
 num.names$ -- 5
-pop$ -- 108
+pop$ -- 107
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 171
+skip$ -- 174
 stack$ -- 0
 substring$ -- 5
 swap$ -- 112
@@ -54,8 +53,7 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 6
 type$ -- 6
-warning$ -- 1
+warning$ -- 0
 while$ -- 5
 width$ -- 6
-write$ -- 64
-(There was 1 warning)
+write$ -- 65
