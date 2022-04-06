@@ -42,15 +42,16 @@ La salida del discriminador puede ser 1 o 0 dependiendo de la función de activa
 entonces los datos proporcionados son reales y si la salida es 0, entonces se refiere a ellos como datos falsos.
 
 El discriminador está capacitado con los datos del dataset, con estos aprende a reconocer cómo se ven y qué características deben 
-clasificarse como reales.
+clasificarse como reales, formalmente, discrimina entre $\tilde{x}$, la muestra falsa, y $x$, 
+los datos muestreados de la distribución real de datos $P_{datos}(x)$.
 
 
 
 
 \begin{figure}[H]
     \begin{center}
-      \includegraphics[scale = 0.5]{discriminador.png}
-      \caption{Discriminador}
+      \includegraphics[scale = 0.4]{discriminador.png}
+      \caption{Modelo Discriminador}
       \label{Alexis2}
     \end{center}
 \end{figure}

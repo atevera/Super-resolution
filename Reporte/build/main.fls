@@ -1146,6 +1146,9 @@ INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\build\..\Imagenes\
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\Imagenes\discriminador.png
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\Imagenes\discriminador.png
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\Imagenes\discriminador.png
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\vf\public\newtx\ntxmi7.vf
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\NewTXMI7.tfm
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\stxscr.tfm
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\build\..\Imagenes\\generador.png
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\build\..\Imagenes\\generador.png
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\Imagenes\generador.png
@@ -1153,6 +1156,10 @@ INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\build\..\Imagenes\
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\Imagenes\generador.png
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\Imagenes\generador.png
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\Imagenes\generador.png
+INPUT .\Secciones\SRGAN_imp.tex
+INPUT Secciones\SRGAN_imp.tex
+INPUT .\Secciones\SRGAN_imp.tex
+INPUT Secciones\SRGAN_imp.tex
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\build\main.bbl
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\build\main.bbl
 INPUT c:\Users\Alex\Documents\GitHub\Super-resolution\Reporte\build\main.bbl
@@ -1188,6 +1195,8 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\newtx\ntx-ot1-
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI.pfb
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI7.pfb
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI7.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txsyb.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\txsyb.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txsys.pfb
