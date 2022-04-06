@@ -37,4 +37,9 @@ S.~Senda, T.~Shibata, and A.~Iketani, ``Example-based super resolution to
   achieve fine magnification of low-resolution images,'' \emph{NEC TECHNICAL
   JOURNAL}, 2012.
 
+\bibitem{GANs}
+I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~Courville, and Y.~Bengio, ``Generative adversarial nets,'' \emph{ArXiv},
+  06 2014.
+
 \end{thebibliography}

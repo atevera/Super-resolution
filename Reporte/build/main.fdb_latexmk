@@ -1,12 +1,13 @@
 # Fdb version 3
-["bibtex build/main"] 1649197094 "build/main.aux" "build/main.bbl" "build/main" 1649197097
+["bibtex build/main"] 1649203946 "build/main.aux" "build/main.bbl" "build/main" 1649203950
   "./IEEEtran.bst" 1649134023 60157 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "bibliografia.bib" 1649194387 2055 7b3aeed3d48f2c44e628eb6d3f1cbfb0 ""
-  "build/main.aux" 1649197097 3074 f42265521593ca93058cf8590ec17f67 "pdflatex"
+  "bibliografia.bib" 1649203796 2219 ddc4f72eb60d6456c250df6613abbef8 ""
+  "build/main.aux" 1649203948 3464 3bd735169c8f402dc17551c11cc276ed "pdflatex"
   (generated)
-  "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1649197095 "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649197097
+  "build/main.bbl"
+["pdflatex"] 1649203946 "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649203950
+  "C:/Users/Alex/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1634535084 11548 079494c2856768ff29cd29d5d60e4c41 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1631153170 9714909 58c0d6ffbcc69e6b560cd500f4fd0785 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1649136942 116917 14e24354e353c7febdc9c0cd258270a4 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -18,6 +19,7 @@
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmrc7t.tfm" 1136797454 2680 312a2d12b1f1df8ee0212e7ba1962402 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri7t.tfm" 1136797454 2288 f478fc8fed18759effb59f3dad7f3084 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri8r.tfm" 1136797454 4640 532ca3305aad10cc01d769f3f91f1029 ""
+  "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233955454 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233955454 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233955454 928 2dc8d444221b7a635bb58038579b861a ""
@@ -144,17 +146,20 @@
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "IEEEtran.cls" 1649011857 288304 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
   "Imagenes/fr_algoritmo.png" 1649134023 140544 15bde476227580f8e2ecd4565d2cc00c ""
+  "Imagenes/modelo_gen_disc.png" 1649203049 52037 9fdcfd6e0e20b7ec9dd605fcd67ecf34 ""
   "Secciones/Antecedentes_RedesConvolucionales.tex" 1649194387 689 be3e48d9d9a0218b454a90e7c852d9c1 ""
   "Secciones/Introduccion.tex" 1649011857 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "Secciones/SRGAN_Ant.tex" 1649203798 771 c24e4bac5ed343df69144427ec50d8e1 ""
   "Secciones/SRGAN_Introduccion.tex" 1649197088 22 7b2c77a2064fc5de4f39320f93e014ac ""
   "Secciones/antecedentes_intro.tex" 1649196675 5233 b3cebf6c9ed90e77f84af465f7a856cc ""
-  "Secciones/freeman_antecendentes.tex" 1649196675 4255 c075cd756ead001a807528631194fea0 ""
+  "Secciones/freeman_antecendentes.tex" 1649203844 4199 3312d9b221ec4af98af78d1eccd7ce34 ""
   "build/../Imagenes//fr_algoritmo.png" 1649134023 140544 15bde476227580f8e2ecd4565d2cc00c ""
-  "build/main.aux" 1649197097 3074 f42265521593ca93058cf8590ec17f67 "pdflatex"
-  "build/main.bbl" 1649197095 1522 5409fadad5e21413b3fa42b52b61b1c8 "bibtex build/main"
-  "build/main.out" 1649197097 1698 f40c8390e9f60c3966495d51fd6d5fec "pdflatex"
-  "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" 1649196675 2987 b41ce2a67d19d930c9b601aff91adcb2 ""
-  "main.tex" 1649196675 2987 b41ce2a67d19d930c9b601aff91adcb2 ""
+  "build/../Imagenes//modelo_gen_disc.png" 1649203049 52037 9fdcfd6e0e20b7ec9dd605fcd67ecf34 ""
+  "build/main.aux" 1649203948 3464 3bd735169c8f402dc17551c11cc276ed "pdflatex"
+  "build/main.bbl" 1649203946 1709 7ccb8afa35ecee1bae43f221817211e2 "bibtex build/main"
+  "build/main.out" 1649203948 1849 a84d6b40505e0039573fd79dd1bfa303 "pdflatex"
+  "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" 1649203950 3022 18fe5efbcd33514cff32f944af1814c9 ""
+  "main.tex" 1649203950 3022 18fe5efbcd33514cff32f944af1814c9 ""
   "paquetes.tex" 1649011857 978 25905f44988ffe5f94cf6076ee5aba89 ""
   (generated)
   "build/main.log"
