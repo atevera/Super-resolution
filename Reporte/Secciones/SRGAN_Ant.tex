@@ -2,10 +2,10 @@
 
 
 Las CNN presentan un gran avance en la reconstrucción de imágenes de baja resolución a alta resolución,
-sin embargo, debido a los metodos basados en interpolaciónes 
+sin embargo, debido a los métodos basados en interpolaciones 
 
 
-Las GAN´s (Generative Adversarial Networks) son un tipo de redes cuyo funcionamiento está basado
+Las GAN´s (Generative Adversarial Networks) son un tipo de entorno cuyo funcionamiento está basado
 en la estimación de modelos generadores, como mencionan Goodfellow et al. \cite{GANs}, esto es 
 posible gracias al entrenamiento simultáneo de dos modelos, uno \emph{generador (G)} que obtiene 
 la distribución de la entrada para generar datos falsos y el otro \emph{discriminador (D)} el cual se encarga de estimar 
@@ -26,6 +26,55 @@ de distinguir cuáles son los datos creados y los reales, siendo los últimos lo
     \begin{center}
       \includegraphics[scale = 0.9]{modelo_gen_disc.png}
       \caption{Modelo Generador y Discriminador}
-      \label{Alex1}
+      \label{Alexis1}
     \end{center}
-    \end{figure}
+\end{figure}
+
+Profundizando un poco más en los componentes del algoritmo, el discriminador es una red neuronal convolucional que consta de muchas 
+capas ocultas y una capa de salida, la principal diferencia aquí es que la capa de salida de las GAN puede tener solo dos salidas, 
+a diferencia de las CNN, que pueden tener un número diferente de salidas con respecto a la cantidad de etiquetas en las que está entrenado.
+La salida del discriminador puede ser 1 o 0 dependiendo de la función de activación que se aplique. Si la salida es 1, 
+entonces los datos proporcionados son reales y si la salida es 0, entonces se refiere a ellos como datos falsos.
+
+El discriminador está capacitado con los datos del dataset, con estos aprende a reconocer cómo se ven y qué características deben 
+clasificarse como reales.
+
+
+
+
+\begin{figure}[H]
+    \begin{center}
+      \includegraphics[scale = 0.3]{Discriminador.jpg}
+      \caption{Discriminador}
+      \label{Alexis2}
+    \end{center}
+\end{figure}
+
+
+Por el contrario, el generador es una red neuronal convolucional inversa, hace exactamente lo opuesto de lo que hace una CNN, ya que 
+a estas se les da una imagen real como entrada y se espera una etiqueta clasificada como salida, 
+pero en el generador, un vector de valores aleatorios se da como señal de entrada 
+y se espera una imagen falsa como salida, esta imagen debera aproximarse a la real dependiendo del criterio
+del generador.
+
+
+
+\begin{figure}[H]
+    \begin{center}
+      \includegraphics[scale = 0.3]{generador.png}
+      \caption{Generador}
+      \label{Alexis3}
+    \end{center}
+\end{figure}
+    
+    \subsubsection{Funciones de perdida.}
+
+
+
+
+
+
+    
+    \subsubsection{Función de activación.}
+
+
