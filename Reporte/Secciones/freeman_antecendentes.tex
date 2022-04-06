@@ -113,3 +113,17 @@ los parches como variables aleatorias y relacionarlas con \emph{Redes de Markov}
 considerando el algoritmo \emph{belief propagation}. Esto es una enorme ventaja,
 ya que se simplifica el proceso de selección del parche considerando 
 únicamente la \emph{superposición} futura en los parches de alta calidad. 
+
+\subsubsection{Imagen de alta resolución}
+\noindent
+Finalmente, como resultado del algoritmo propuesto en \cite{freeman} se obtiene
+una imagen de mejor resolución que la entrada considerando un factor de escalado
+deseado para el proceso de interpolación. Note que el motor central del algoritmo
+está basado en el algoritmo de predicción descrito anteriormente y el diccionario
+construido a partir de un conjunto de imágenes donde se realizará la búsqueda
+mediante el algoritmo del \emph{vecino más cercano}. 
+
+Como producto del algoritmo de predicción se obtendrá una imagen con sólo frecuencias
+altas que no se encontraban explícitamente en la imagen de entrada y que se sumará
+con la imagen escalada para obtener así la imagen de alta resolución respecto
+la imagen de entrada tal como se observa en la Figura \ref{fig:fr_algoritmo}.
