@@ -42,4 +42,8 @@ I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
   A.~Courville, and Y.~Bengio, ``Generative adversarial nets,'' \emph{ArXiv},
   06 2014.
 
+\bibitem{SRGAN_Tesis}
+L.~Calcagni, ``Redes generativas antagónicas y sus aplicaciones,'' Ph.D.
+  dissertation, 04 2020.
+
 \end{thebibliography}
