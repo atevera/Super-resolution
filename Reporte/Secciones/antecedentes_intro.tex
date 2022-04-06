@@ -71,14 +71,22 @@ Resolución}:
     tiempo de procesamiento. Lo anterior promueve que sea un estándar en muchos programas
     de edición de imágenes, controladores de impresoras e interpolación en cámaras. 
 \end{itemize}
-
-\textbf{NOTA: Agregar comparativo de interpolaciones con un parche y escalado x2}
-
+\begin{figure}[H]
+    \includegraphics[scale = 0.6 ]{ tipos_interpoladores.png }
+    \centering
+    \caption{ Algoritmos de interpolación no adaptativos }
+    \label{fig:interpoladores}
+\end{figure}
 Todos los interpoladores no adaptativos intentan encontrar un equilibrio óptimo
 entre tres efectos no deseados: halos de borde, desenfoque y \emph{aliasing}. En la 
-Figura \textbf{**} puede observarse el efecto para cada caso. 
+Figura \ref{fig:efectos_inter} puede observarse el efecto para cada caso. 
 
-\textbf{NOTA: Imagen entre los tres efectos comentados al realizar interpolación}
+\begin{figure}[H]
+    \includegraphics[scale = 0.5 ]{ efectos_inter.png }
+    \centering
+    \caption{ Efectos de interpolación}
+    \label{fig:efectos_inter}
+\end{figure}
 
 Incluso los interpoladores no adaptativos más avanzados siempre tienden a aumentar
 o disminuir algunos de los efectos a expensas de los otros dos, por lo tanto uno 
