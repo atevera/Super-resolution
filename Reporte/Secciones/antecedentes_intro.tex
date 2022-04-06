@@ -22,7 +22,7 @@ El segundo de los métodos considera que el frame de alta resolución es el resu
 de una secuencia de frames de baja resolución que permiten obtener las frecuencias 
 altas de la imagen resultante para mejorar su resolución. Esto es conveniente cuando
 ya se cuenta con el conjunto de imágenes requeridas y se planea realizar una 
-reconstrucción de la imagen en una mejor calidad.
+reconstrucción de la imagen en una mejor resolución.
 
 Por otro lado, el tercer método basado en un único frame o imagen busca aproximar las
 frecuencias altas (detalles) que no se encuentra en la entrada del algoritmo y que evidentemente
@@ -31,7 +31,7 @@ el primero de los métodos.
 
 \subsection{Interpolación}
 \noindent
-Para mejorar la calidad se busca aumentar la densidad de pixeles de la imagen con el objetivo
+Para mejorar la resolución se busca aumentar la densidad de pixeles de la imagen con el objetivo
 de hacer la imagen más grande y mejorar sus detalles a partir de la predicción de 
 pixeles que no se encuentran en la imagen visiblemente, pero que podrían aproximarse
 al buscar que se mantenga una consistencia en la imagen modificada de acuerdo a la
@@ -67,7 +67,7 @@ Resolución}:
     \item \textbf{Bicúbica} - Valora una vecindad 4x4 de pixeles conocidos para la
     predicción del pixel central considerando el mismo procedimiento de la 
     interpolación bilineal. Como resultado, se alcanzan imágenes más nítidas que los 
-    métodos anteriores. Logrando así un equilibrio entre la calidad de salida y el 
+    métodos anteriores. Logrando así un equilibrio entre la resolución de salida y el 
     tiempo de procesamiento. Lo anterior promueve que sea un estándar en muchos programas
     de edición de imágenes, controladores de impresoras e interpolación en cámaras. 
 \end{itemize}

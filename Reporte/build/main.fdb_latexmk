@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/main"] 1649223952 "build/main.aux" "build/main.bbl" "build/main" 1649223961
+["bibtex build/main"] 1649227422 "build/main.aux" "build/main.bbl" "build/main" 1649227432
   "./IEEEtran.bst" 1649013167 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "bibliografia.bib" 1649223434 2266 d8ac6e6872731e60e3b273e0ae93d9ba ""
-  "build/main.aux" 1649223960 6022 5343dce6f454681157b894a477fe1db5 "pdflatex"
+  "bibliografia.bib" 1649227399 2609 8449f51365900970101157e4c66fe095 ""
+  "build/main.aux" 1649227430 6231 1e46edbafa167960e283b080f668d4dc "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1649223952 "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649223961
+["pdflatex"] 1649227423 "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649227432
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1648764255 117049 c83a9ef731164474226ce74cdfc2b877 ""
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1632086958 11548 5a0368f522465b740d0cf9ccd9659e50 ""
   "C:/Users/Alejandro TeveraRuiz/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1648764456 10254077 f4904d94111f78528f22717916603424 ""
@@ -180,9 +180,9 @@
   "Secciones/SRGAN_Ant.tex" 1649223434 4278 28cd3d74a36f42abba288fe06f78b72c ""
   "Secciones/SRGAN_Introduccion.tex" 1649203395 22 7b2c77a2064fc5de4f39320f93e014ac ""
   "Secciones/SRGAN_imp.tex" 1649223434 259 f5072af99eca024e41c5b4e76c59b8d0 ""
-  "Secciones/antecedentes_intro.tex" 1649220541 5920 cc00a031dbd23fdd73fb579780203ac4 ""
-  "Secciones/freeman_antecendentes.tex" 1649223369 7989 e86783a8f8ab62e0639ad814b1ba9003 ""
-  "Secciones/freeman_implementacion.tex" 1649223933 11 4e46726b1de75cb4f9613ff72ceeaf46 ""
+  "Secciones/antecedentes_intro.tex" 1649226096 5932 45b86d33327eb21d844a8dfa5c756336 ""
+  "Secciones/freeman_antecendentes.tex" 1649226121 8017 e35ffc716dd270ddad9992e0520e8f12 ""
+  "Secciones/freeman_implementacion.tex" 1649227399 1069 54d50d78cf2dc883bfb4e0f2f919caa0 ""
   "build/../Imagenes//discriminador.png" 1649223433 342576 958a8446702a77e9d2c239b440bb632a ""
   "build/../Imagenes//efectos_inter.png" 1649216586 76352 8a013f286d2639b3215002701353b9d8 ""
   "build/../Imagenes//fr_algoritmo.png" 1649221467 125519 73cb953ee21dfb1b622c2a51bb7c9e5d ""
@@ -192,9 +192,9 @@
   "build/../Imagenes//modelo_gen_disc.png" 1649203395 52037 9fdcfd6e0e20b7ec9dd605fcd67ecf34 ""
   "build/../Imagenes//proceso_gan.png" 1649223434 68124 137484b10bdb14f4eac29a9e5334b7c9 ""
   "build/../Imagenes//tipos_interpoladores.png" 1649220051 27927 3078b5384e3c5c2d3bc844ab597d9c52 ""
-  "build/main.aux" 1649223960 6022 5343dce6f454681157b894a477fe1db5 "pdflatex"
-  "build/main.bbl" 1649223952 1869 1bfe0692954eb831a74481316b53469e "bibtex build/main"
-  "build/main.out" 1649223960 2780 527c112461255cd092bced6df8c0ad88 "pdflatex"
+  "build/main.aux" 1649227430 6231 1e46edbafa167960e283b080f668d4dc "pdflatex"
+  "build/main.bbl" 1649227423 2150 914cc487362dd812c601b87e2939244f "bibtex build/main"
+  "build/main.out" 1649227430 2991 539592ee9d6e04fba474e4337e466ea0 "pdflatex"
   "g:/Mi unidad/Master/C2/Vision/Super-resolution/Reporte/main.tex" 1649223941 3109 efef7a8faff9c25b66d8a3a848f75075 ""
   "main.tex" 1649223941 3109 efef7a8faff9c25b66d8a3a848f75075 ""
   "paquetes.tex" 1649223671 1000 4a08fc73b5f30f8e21bcf0e7a2357ee7 ""

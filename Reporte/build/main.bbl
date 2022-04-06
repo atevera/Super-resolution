@@ -46,4 +46,10 @@ I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
 L.~Calcagni, ``Redes generativas antagónicas y sus aplicaciones,'' Ph.D.
   dissertation, Universidad Nacional de la Plata, 04 2020.
 
+\bibitem{MIRFLICKR}
+M.~J. Huiskes and M.~S. Lew, ``The mir flickr retrieval evaluation,'' in
+  \emph{MIR '08: Proceedings of the 2008 ACM International Conference on
+  Multimedia Information Retrieval}.\hskip 1em plus 0.5em minus 0.4em\relax New
+  York, NY, USA: ACM, 2008.
+
 \end{thebibliography}

@@ -11,7 +11,7 @@ algoritmos de interpolación no adaptativos.
 
 Para solucionarlo, algunos autores proponen realizar un postprocesado a la imagen 
 interpolada para incluir los detalles faltantes y con ello mejorar visiblemente 
-la calidad de los bordes de la imagen. 
+la resolución de los bordes de la imagen. 
 
 En particular, \cite{freeman} propone un parchado de la imagen reescalada a partir
 de un conjunto de entrenamiento o diccionario de parches en pares de alta
@@ -33,7 +33,7 @@ entrada mediante un algoritmo de predicción.
 \noindent
 El algoritmo de \emph{Súper Resolución} \cite{freeman}
 opera bajo la premisa que la relación
-de predicción entre los parches de alta y baja calidad es independiente del 
+de predicción entre los parches de alta y baja resolución es independiente del 
 contraste de la imagen. Esto también resulta ventajoso, ya que el diccionario 
 no necesita ser de imágenes similares a las que se van a reconstruir para 
 mejorar la calidad de resolución tal como comenta \cite{diccionario_shuji}.
@@ -50,7 +50,7 @@ Por otra parte, para que el diccionario sea funcional sin importar el
 tipo de imagen a reconstruir, se busca normalizar cada pareja de parche con el 
 objetivo de mantener su relación intrínseca. De acuerdo con \cite{freeman}, 
 los parches de baja resolución se recomiendan con un tamaño de 7x7 pixeles
-mientras que los de alta calidad serán de 5x5 todos con centro en el mismo pixel
+mientras que los de alta resolución serán de 5x5 todos con centro en el mismo pixel
 para mantener la relación tal como se presenta en la Figura \ref{fig:fr_dic}.
 
 \begin{figure}[H]
@@ -100,7 +100,7 @@ Observe que la imagen de entrada se irá segmentando en los parches de baja
 resolución (color gris-verdoso). Estos parches se calculará su media absoluta 
 $|\mu|$ más un $\epsilon$ (para evitar indeterminación ante parches con poco
 contraste), posteriormente se concatena con el producto del factor de control 
-$\alpha$ que considera la \emph{superposición} entre los parches de alta calidad
+$\alpha$ que considera la \emph{superposición} entre los parches de alta resolución
 (naranjas). Dicha concatenación se divide entre el promedio absoluto más $\epsilon$
 para convertirse en el vector a buscar en el diccionario. 
 
@@ -111,16 +111,16 @@ más cercano}. Esto puede observarse en la salida del algoritmo al notar que el
 vector emparejado tiene un pixel de color diferente al solicitado, pero como 
 es muy cercano, resulta la salida del algoritmo de búsqueda. 
 
-Dicho vector de búsqueda permite emparejar al parche de alta calidad asociado
+Dicho vector de búsqueda permite emparejar al parche de alta resolución asociado
 en el diccionario, el cual será multiplicado por el factor $|\mu|+\epsilon$ para 
-retomar las tonalidades del parche de baja calidad e incrustado en la \emph{imagen de altas frecuencias}
+retomar las tonalidades del parche de baja resolución e incrustado en la \emph{imagen de altas frecuencias}
 para ejecutar nuevamente el algoritmo de manera iterativa.
 
 De acuerdo con \cite{freeman}, el \emph{algoritmo de un paso} evita considerar
 los parches como variables aleatorias y relacionarlas con \emph{Redes de Markov}
 considerando el algoritmo \emph{belief propagation}. Esto es una enorme ventaja,
 ya que se simplifica el proceso de selección del parche considerando 
-únicamente la \emph{superposición} futura en los parches de alta calidad. 
+únicamente la \emph{superposición} futura en los parches de alta resolución. 
 
 \subsubsection{Imagen de alta resolución}
 \noindent

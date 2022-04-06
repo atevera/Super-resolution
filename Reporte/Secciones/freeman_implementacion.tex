@@ -1,1 +1,20 @@
-Buenas :)
+\noindent
+Dado que el objetivo del proyecto es comparar tres diferentes métodos 
+de súper resolución, en esta sección se presentarán las actividades
+requeridas para la implementación de los métodos. Considerando desde los 
+requisitos de software, hardware y datos de entrenamiento en caso sean 
+necesarios. 
+
+\subsection{Example-Based Super-Resolution}
+\noindent
+Para el primero de ellos, se retoma la literatura expuesta en \cite{freeman}
+comenzando con la generación del diccionario donde se encuentran relacionados 
+los parches de baja y alta resolución. Previo a esto, es necesario pre-procesar
+el conjunto de imágenes para su posterior segmentación. 
+
+De acuerdo a las indicaciones, se deben tener pares de imágenes en alta y baja 
+resolución. En particular, se ha considerado las primeras 13 imágenes del 
+\emph{dataset} disponible en \cite{MIRFLICKR}.
+
+Realizando un método iterativo que realiza un barrido bidimensional en cada imagen
+resulta bastante sencillo obtener los parches correspondientes de alta y baja resolución. 
