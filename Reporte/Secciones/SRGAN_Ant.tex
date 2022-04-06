@@ -33,6 +33,8 @@ de distinguir cuáles son los datos creados y los reales, siendo los últimos lo
     \end{center}
 \end{figure}
 
+\subsubsection{Componentes.}
+
 Profundizando un poco más en los componentes del algoritmo, el discriminador es una red neuronal convolucional que consta de muchas 
 capas ocultas y una capa de salida, la principal diferencia aquí es que la capa de salida de las GAN puede tener solo dos salidas, 
 a diferencia de las CNN, que pueden tener un número diferente de salidas con respecto a la cantidad de etiquetas en las que está entrenado.
@@ -56,9 +58,15 @@ clasificarse como reales.
 
 Por el contrario, el generador es una red neuronal convolucional inversa, hace exactamente lo opuesto de lo que hace una CNN, ya que 
 a estas se les da una imagen real como entrada y se espera una etiqueta clasificada como salida, 
-pero en el generador, un vector de valores aleatorios se da como señal de entrada 
-y se espera una imagen falsa como salida, esta imagen debera aproximarse a la real dependiendo del criterio
-del generador.
+pero en el generador, un vector de ruido aleatorio\emph{(z)} se da como señal de entrada 
+y se espera una imagen falsa como salida, esta imagen debera aproximarse a la real a
+partir de una distribución pz(z) (en general una distribución Gaussiana) que
+produce una muestra de datos falsos,$\tilde{x}$ es decir:
+
+\begin{equation}
+G(z) = \tilde{x}
+\end{equation}
+
 
 
 
