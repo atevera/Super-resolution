@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/main"] 1649203946 "build/main.aux" "build/main.bbl" "build/main" 1649203950
+["bibtex build/main"] 1649207993 "build/main.aux" "build/main.bbl" "build/main" 1649207997
   "./IEEEtran.bst" 1649134023 60157 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "bibliografia.bib" 1649203796 2219 ddc4f72eb60d6456c250df6613abbef8 ""
-  "build/main.aux" 1649203948 3464 3bd735169c8f402dc17551c11cc276ed "pdflatex"
+  "build/main.aux" 1649207996 3499 a2ab9f7dfcdc9d450e7c08f11e511a21 "pdflatex"
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["pdflatex"] 1649203946 "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649203950
+  "build/main.blg"
+["pdflatex"] 1649207994 "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649207997
   "C:/Users/Alex/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1634535084 11548 079494c2856768ff29cd29d5d60e4c41 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1631153170 9714909 58c0d6ffbcc69e6b560cd500f4fd0785 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1649136942 116917 14e24354e353c7febdc9c0cd258270a4 ""
@@ -149,20 +149,20 @@
   "Imagenes/modelo_gen_disc.png" 1649203049 52037 9fdcfd6e0e20b7ec9dd605fcd67ecf34 ""
   "Secciones/Antecedentes_RedesConvolucionales.tex" 1649194387 689 be3e48d9d9a0218b454a90e7c852d9c1 ""
   "Secciones/Introduccion.tex" 1649011857 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Secciones/SRGAN_Ant.tex" 1649203798 771 c24e4bac5ed343df69144427ec50d8e1 ""
+  "Secciones/SRGAN_Ant.tex" 1649207990 1571 408e401e74b8b3dc9f50c1d4c0d18f04 ""
   "Secciones/SRGAN_Introduccion.tex" 1649197088 22 7b2c77a2064fc5de4f39320f93e014ac ""
   "Secciones/antecedentes_intro.tex" 1649196675 5233 b3cebf6c9ed90e77f84af465f7a856cc ""
   "Secciones/freeman_antecendentes.tex" 1649203844 4199 3312d9b221ec4af98af78d1eccd7ce34 ""
   "build/../Imagenes//fr_algoritmo.png" 1649134023 140544 15bde476227580f8e2ecd4565d2cc00c ""
   "build/../Imagenes//modelo_gen_disc.png" 1649203049 52037 9fdcfd6e0e20b7ec9dd605fcd67ecf34 ""
-  "build/main.aux" 1649203948 3464 3bd735169c8f402dc17551c11cc276ed "pdflatex"
-  "build/main.bbl" 1649203946 1709 7ccb8afa35ecee1bae43f221817211e2 "bibtex build/main"
-  "build/main.out" 1649203948 1849 a84d6b40505e0039573fd79dd1bfa303 "pdflatex"
+  "build/main.aux" 1649207996 3499 a2ab9f7dfcdc9d450e7c08f11e511a21 "pdflatex"
+  "build/main.bbl" 1649207994 1835 a95cafcb926422240428cde57f81c5c5 "bibtex build/main"
+  "build/main.out" 1649207996 1781 cd3911a3e4d8fe95b8186d4fcf9787ee "pdflatex"
   "c:/Users/Alex/Documents/GitHub/Super-resolution/Reporte/main.tex" 1649203950 3022 18fe5efbcd33514cff32f944af1814c9 ""
   "main.tex" 1649203950 3022 18fe5efbcd33514cff32f944af1814c9 ""
   "paquetes.tex" 1649011857 978 25905f44988ffe5f94cf6076ee5aba89 ""
   (generated)
-  "build/main.log"
   "build/main.pdf"
-  "build/main.aux"
   "build/main.out"
+  "build/main.aux"
+  "build/main.log"
