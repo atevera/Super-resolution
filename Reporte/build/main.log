@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.6)  6 APR 2022 03:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.6)  6 APR 2022 03:43
 entering extended mode
 **"c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex"
 (c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex
@@ -847,7 +847,7 @@ LaTeX Warning: Reference `fig:fr_algoritmo' on page 2 undefined on input line 21
 File: ../Imagenes//fr_algoritmo.png Graphic file (type png)
 <use ../Imagenes//fr_algoritmo.png>
 Package pdftex.def Info: ../Imagenes//fr_algoritmo.png  used on input line 26.
-(pdftex.def)             Requested size: 380.78969pt x 128.27893pt.
+(pdftex.def)             Requested size: 304.6271pt x 102.62158pt.
 [2 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/tipos_interpoladores.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/efectos_inter.png>]
 
 LaTeX Warning: Citation `freeman' on page 3 undefined on input line 34.

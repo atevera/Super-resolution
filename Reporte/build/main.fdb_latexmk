@@ -1,12 +1,12 @@
 # Fdb version 3
 ["bibtex build/main"] 0 "build/main.aux" "build/main.bbl" "build/main" 0
   "./IEEEtran.bst" 1649178809 60157 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "bibliografia.bib" 1649230276 3091 393ce3905d0b23385b81f23af8f4accf ""
+  "bibliografia.bib" 1649233666 3091 393ce3905d0b23385b81f23af8f4accf ""
   "build/main.aux" 0 -1 0 "pdflatex"
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["pdflatex"] 1649232577 "c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649232577
+["pdflatex"] 1649234613 "c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex" "build/main.pdf" "main" 1649234613
   "C:/Users/latm_/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1649179195 11548 a96f3e6b697d74c8b70d690897a4bebf ""
   "C:/Users/latm_/AppData/Local/Programs/MiKTeX1/tex/context/base/mkii/supp-pdf.mkii" 1580393758 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/latm_/AppData/Local/Programs/MiKTeX1/tex/generic/babel/babel.sty" 1644741138 147385 92d9e28fe4fa3ddad85cb63fd2ce2840 ""
@@ -113,7 +113,7 @@
   "Imagenes/Red_Neuronal.png" 1649229823 545171 73a993245e18b97758361221ca3411fe ""
   "Imagenes/discriminador.png" 1649229520 342576 958a8446702a77e9d2c239b440bb632a ""
   "Imagenes/efectos_inter.png" 1649229520 76352 8a013f286d2639b3215002701353b9d8 ""
-  "Imagenes/fr_algoritmo.png" 1649229824 125519 73cb953ee21dfb1b622c2a51bb7c9e5d ""
+  "Imagenes/fr_algoritmo.png" 1649232965 125519 73cb953ee21dfb1b622c2a51bb7c9e5d ""
   "Imagenes/fr_diccionario.png" 1649229520 227891 ff4e1b0f4fda83c367f9941e7c653ab2 ""
   "Imagenes/freeman_prediccion.png" 1649229520 137031 bea7d9b9d651a3b5554ce18284412ca3 ""
   "Imagenes/generador.png" 1649229520 188114 9409f6c4faf385b6307bf5465d99851d ""
@@ -126,9 +126,9 @@
   "Secciones/SRGAN_Introduccion.tex" 1649197301 22 7b2c77a2064fc5de4f39320f93e014ac ""
   "Secciones/SRGAN_imp.tex" 1649229520 259 f5072af99eca024e41c5b4e76c59b8d0 ""
   "Secciones/antecedentes_intro.tex" 1649229520 5932 45b86d33327eb21d844a8dfa5c756336 ""
-  "Secciones/freeman_antecendentes.tex" 1649230193 8017 e35ffc716dd270ddad9992e0520e8f12 ""
+  "Secciones/freeman_antecendentes.tex" 1649234016 8017 b62ada3169a9de3e88daf90661b42ed5 ""
   "Secciones/freeman_implementacion.tex" 1649229520 1070 ef97206758dda7e262025fcd86b35418 ""
-  "build/main.aux" 1649232577 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "build/main.aux" 1649234613 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "build/main.bbl" 0 -1 0 "bibtex build/main"
   "c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex" 1649229520 3109 efef7a8faff9c25b66d8a3a848f75075 ""
   "main.tex" 1649229520 3109 efef7a8faff9c25b66d8a3a848f75075 ""
