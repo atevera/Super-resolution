@@ -63,7 +63,7 @@ y asi logra generar una nueva matriz de salida, que en definitiva será nuestra 
 
 \subsubsection{Decenso del gradiente}
 Para que la red neuronal convolucional \emph{aprenda} se hace uso del algoritmo \emph{backpropagation}, el cual emplea el
-algoritmo del descenso del gradiente, el cual es de uso general y se encarga, de forma numérica, de encontrar un mínimo de
+algoritmo del descenso del gradiente \cite{DescensoGradiente}, el cual es de uso general y se encarga, de forma numérica, de encontrar un mínimo de
 de funciones multivariadas.\\
 
 \begin{figure}[H]
@@ -84,8 +84,8 @@ De manera general, podemos definir esto como:
 \end{align}
 
 \subsubsection{Optimizador Adam (Estimación Adaptiva de Momentos)}
-Lo que un optimizador hace es mejorar los valores de los parámetros de la red con el fin de reducir el error cometido por la red.
-Para ello se utiliza, (Como se mencionó en el descenso del gradiente) el algoritmo de \emph{backpropagation}.\\
+Lo que un optimizador \cite{AdamOptimizador} hace es mejorar los valores de los parámetros de la red con el fin de reducir el error cometido por la red.
+Para ello se utiliza (Como se mencionó en el descenso del gradiente) el algoritmo de \emph{backpropagation}.\\
 El optimizador más básico posible es actualizar los valores de los parámetros, equitativamente, con base en la \textbf{tasa de
 aprendizaje} (\emph{learning rate}), el cual es presentado en \eqref{eqn:SRCNN_DescensoGradiente}, en donde la tasa de aprendizaje
 corresponde al parámetro \textbf{$\alpha$} y es un valor constante.\\
