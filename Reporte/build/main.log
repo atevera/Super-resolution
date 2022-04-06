@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.6)  6 APR 2022 03:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.6)  6 APR 2022 05:22
 entering extended mode
 **"c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex"
 (c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex
@@ -999,22 +999,49 @@ File: ../Imagenes//generador.png Graphic file (type png)
 <use ../Imagenes//generador.png>
 Package pdftex.def Info: ../Imagenes//generador.png  used on input line 73.
 (pdftex.def)             Requested size: 381.52832pt x 139.42194pt.
-[8 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/modelo_gen_disc.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/discriminador.png>]) (Secciones/freeman_implementacion.tex
+[8 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/modelo_gen_disc.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/discriminador.png>]) (Secciones/Antecedentes_SRCNN.tex
 
-LaTeX Warning: Citation `freeman' on page 9 undefined on input line 10.
+LaTeX Warning: Citation `freeman' on page 9 undefined on input line 3.
 
 
-LaTeX Warning: Citation `MIRFLICKR' on page 9 undefined on input line 17.
+LaTeX Warning: Citation `SRCNN' on page 9 undefined on input line 12.
+
+<../Imagenes//SRCNN_Arquitectura.png, id=101, 908.79526pt x 327.02174pt>
+File: ../Imagenes//SRCNN_Arquitectura.png Graphic file (type png)
+<use ../Imagenes//SRCNN_Arquitectura.png>
+Package pdftex.def Info: ../Imagenes//SRCNN_Arquitectura.png  used on input line 21.
+(pdftex.def)             Requested size: 545.28137pt x 196.21455pt.
+
+Overfull \hbox (29.28137pt too wide) in paragraph at lines 21--22
+ [][] 
+ []
+
+[9 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/generador.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/SRCNN_Arquitectura.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
+
+ []
+
+) (Secciones/freeman_implementacion.tex
+
+LaTeX Warning: Citation `freeman' on page 10 undefined on input line 10.
+
+
+LaTeX Warning: Citation `MIRFLICKR' on page 10 undefined on input line 17.
 
 ) (Secciones/SRGAN_imp.tex
-<../Imagenes//proceso_gan.png, id=101, 516.93124pt x 346.79562pt>
+<../Imagenes//proceso_gan.png, id=115, 516.93124pt x 346.79562pt>
 File: ../Imagenes//proceso_gan.png Graphic file (type png)
 <use ../Imagenes//proceso_gan.png>
 Package pdftex.def Info: ../Imagenes//proceso_gan.png  used on input line 7.
 (pdftex.def)             Requested size: 310.16113pt x 208.07896pt.
-)
+) [10]
 No file main.bbl.
-[9 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/generador.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/proceso_gan.png>] [10] (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.aux
+[11 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/proceso_gan.png>] (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
@@ -1031,14 +1058,14 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D4C87F52525684D081921ABF1AD10990;3820.
+(rerunfilecheck)             After:  181A81EE5733DE40DD5C09EDB5F63071;4323.
  ) 
 Here is how much of TeX's memory you used:
- 19104 strings out of 478606
- 297968 string characters out of 2844548
+ 19144 strings out of 478606
+ 298886 string characters out of 2844548
  614258 words of memory out of 3000000
- 36870 multiletter control sequences out of 15000+600000
- 532232 words of font info for 150 fonts, out of 8000000 for 9000
+ 36896 multiletter control sequences out of 15000+600000
+ 533817 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,17n,88p,385b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\latm_\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk>{C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}
