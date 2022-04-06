@@ -6,3 +6,5 @@ Reporte/build/main.log
 Reporte/build/main.out
 Reporte/build/main.synctex.gz
 Reporte/build/main.pdf
+*.pdf
+*.gz
