@@ -23,7 +23,7 @@ manera específica el algoritmo propuesto basado en el parchado de la imagen de
 entrada mediante un algoritmo de predicción.
 
 \begin{figure}[H]
-    \includegraphics[scale = 0.8]{ fr_algoritmo.png }
+    \includegraphics[scale = 0.5]{ fr_algoritmo.png }
     \centering
     \caption{ Algoritmo de súper resolución }
     \label{fig:fr_algoritmo}
@@ -51,7 +51,14 @@ tipo de imagen a reconstruir, se busca normalizar cada pareja de parche con el
 objetivo de mantener su relación intrínseca. De acuerdo con \cite{freeman}, 
 los parches de baja resolución se recomiendan con un tamaño de 7x7 pixeles
 mientras que los de alta calidad serán de 5x5 todos con centro en el mismo pixel
-para mantener la relación.
+para mantener la relación tal como se presenta en la Figura \ref{fig:fr_dic}.
+
+\begin{figure}[H]
+    \includegraphics[scale = 0.3]{ fr_diccionario.png }
+    \centering
+    \caption{ Adquisición de parches de cada imagenes}
+    \label{fig:fr_dic}
+\end{figure}
 
 En específico, los parches de baja resolución deben reordenarse como un vector 
 en $\mathbb{R}^{1\times49}$ concatenado con la primera fila y primera columna

@@ -71,6 +71,14 @@ Resolución}:
     tiempo de procesamiento. Lo anterior promueve que sea un estándar en muchos programas
     de edición de imágenes, controladores de impresoras e interpolación en cámaras. 
 \end{itemize}
+
+En la Figura \ref{fig:interpoladores} se presentan los tres algoritmos no adaptativos
+más utilizados. Observe que las definiciones dadas anteriormente coinciden con los 
+resultados expuestos donde el \emph{vecino más cercano} resulta poco útil para
+predecir los pixeles intermedios mientras que \emph{bilineal} o \emph{bicúbica}
+predicen de mejor manera los pixeles intermedios con un poco más de detalle para
+en el caso del último algoritmo. 
+ 
 \begin{figure}[H]
     \includegraphics[scale = 0.6 ]{ tipos_interpoladores.png }
     \centering
