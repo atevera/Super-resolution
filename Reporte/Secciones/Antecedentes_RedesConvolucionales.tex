@@ -104,8 +104,9 @@ El adaptador adam quedá descrito por la siguiente ecuación:
 
 Donde en la ecuación \eqref{eqn:SRCNN_Adam} $m$ y $v$ representan los dos momentos, siendo $m$ el que modela la media de los
 gradientes a lo largo del tiempo, mientras que $v$ hace lo mismo con la varianza. Por lo general los valores de $\beta_1$ y
-$\beta_2$ se fijan como: $\beta_1=0.9$, $\beta_2=0.999$. El parámetro $\alpha$ corresponde a la tasa de aprendizaje y
-finalmente $W$ representa los parámetros de la red.
+$\beta_2$ se fijan como: $\beta_1=0.9$, $\beta_2=0.999$. El parámetro $\alpha$ corresponde a la tasa de aprendizaje, $W$
+representa los parámetros de la red y finalmente el parámetro $\epsilon$ es un valor pequeño utilizado para evitar el
+truncamiento numérico.
 
 \subsubsection{Error Cuadrático Medio (MSE)}
 Mientras entrenamos el modelo, vamos a querer evaluar su precisión usando una función de costo (o pérdida). Esto también

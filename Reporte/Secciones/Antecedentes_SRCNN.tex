@@ -36,7 +36,7 @@ de la red. Formalmente, la primer capa se expresa como una operación $F_1$:
 Donde $Y$ y $B_1$ representan los filtros y el \emph{bias} respectivamente y el operador "$*$" denota la operación de convolución.
 Se utiliza la función de activación \textbf{ReLU} (ReLU,$max(0,x)$) en las respuestas de los filtros.\\
 
-\textbf{Mapeo}\\
+\textbf{2. Mapeo}\\
 La primer capa extrae caracteristicas de $n_1$ dimensiones para cada parche. En la segunda operación se realiza un mapeo de cada
 uno de estos vectores de dimensiones $n_1$ con vectores de dimensiones $n_2$. Esto es equivalente a aplicar $n_2$ filtros. Esta
 descripción es válida para filtros de kernel $1\times1$, pero es facil generalizar para otros tamaños de \emph{kernel}, solo que
@@ -50,7 +50,7 @@ ahora el mapeo se realiza en parches de kernel $p\times p$. La operación de la 
 Cada uno de los vectores de salida de dimensiones $n_2$ es conceptualmente la reprsentación de un parche en alta resolución que
 será utilizado para la reconstrucción.\\
 
-\textbf{Reconstrucción}\\
+\textbf{3. Reconstrucción}\\
 En los métodos tradicionales, la predicción de traslapamiento de parches de alta resolución es frecuentemente promediada para
 producir la imagen final. El promediado puede ser considerado como un filtro pre-definido sobre un conjunto de mapas de
 características (Donde cada posición es la forma de vector "aplando" de un parche de alta resolución). Se define una capa

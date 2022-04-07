@@ -1,0 +1,32 @@
+\subsection{SRCNN}
+Partimo del método descrito en \cite{SRCNN}, en el cual se menciona una red que cuente con al menos 3 capas convolucionales, de
+manera que la primer capa se encargue de extraer los parches de baja resolución, la(s) capa(s) intermedias realizan el mapeo entre
+los parches de baja resolución y los de alta resolución, y la última capa realizará la reconstrucción de la imagen de alta
+resolución. Para ello hicimos uso de la libreria \textbf{keras} y de \textbf{tensorflow}.\\
+\subsubsection{Entrenamiento de la red}
+Para poder tener una SRCNN funcional, tuvimos que entrenar nuestro modelo a fin de lograr obtener los resultados que esperabamos.
+Para este proceso de entrenamiento es necesario que en nuestro \emph{dataset} tengamos la imagen en alta resolución y su
+correspondiente par de baja resolución. Para obtener las imagenes en baja resolución, se puede seguir el siguiente procedimiento:
+\begin{enumerate}
+    \item Reducir la escala de la imagen original (Alt resolución), puede ser en un factor de 2 o el que se desee.
+    \item Reescalar la imagen que acabamos de reducir, dependiendo del factor de reducción de escala que hayamos utilizados, de
+    manera que tengamos una imagen del mismo tamaño que la imagen de alta resolución. El resultado será una imagen que se verá
+    borrosa, es decir, habremos reducido su resolución.
+\end{enumerate}
+Debido a esta forma de generar las imagenes de baja resolución, fue necesario tener un módelo SRCNN para cada factor de escalamiento
+de imagen. Para nuestro caso se realizaron entrenamientos para 2 factores de escalamiento: \textbf{1)} Factor de 2 y \textbf{2)}
+factor de 4.\\
+Tambien fue necesario tomar en cuenta el espacio de color en el cual se realizará el entrenamiento, ya que de este depende la
+\emph{forma} de la imagen de entrada de la red neuronal. Para nuestro casó realizamos modelos SRCNN para los espacios de color
+\textbf{RGB} y \textbf{$YC_rC_b$}.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Texto que se podria utilizar en la sección de "discusiones" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
+Para el caso del espacio de color $YC_rC_b$ realizamos el entrenamiento únicamente en el
+canal $Y$, ya que es en este canal en donde se concentra la mayor parte de la información de la imagen referente a los detalles y
+texturas (Si vemos este canal por separado, sería como ver la imagen en escala de grises). Para el caso del espacio de color $RGB$
+el entrenamiento fue realizado sobre los 3 canales, ya que en este espacio de color, los detalles y texturas de la imagen se
+distribuyen entre los 3 canales.\\
+\end{comment}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
