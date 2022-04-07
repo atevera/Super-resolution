@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.6)  6 APR 2022 05:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2022.4.6)  7 APR 2022 16:27
 entering extended mode
 **"c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex"
 (c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/main.tex
@@ -734,7 +734,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip82
 ))
 Package hyperref Info: Option `breaklinks' set `true' on input line 11.
- (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.aux)
+ (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.aux
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 39.
@@ -812,62 +815,35 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 39.
 LaTeX Info: Redefining \pageref on input line 39.
 LaTeX Info: Redefining \nameref on input line 39.
+ (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.out) (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
- (Secciones/Introduccion.tex) (Secciones/SRGAN_Introduccion.tex) (Secciones/antecedentes_intro.tex
-
-LaTeX Warning: Citation `interpolation_cambridge' on page 1 undefined on input line 42.
-
-[1{C:/Users/latm_/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-
-LaTeX Warning: Reference `fig:interpoladores' on page 2 undefined on input line 75.
-
-<../Imagenes//tipos_interpoladores.png, id=15, 747.9945pt x 178.5069pt>
+ (Secciones/Introduccion.tex) (Secciones/SRGAN_Introduccion.tex) (Secciones/antecedentes_intro.tex [1{C:/Users/latm_/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<../Imagenes//tipos_interpoladores.png, id=121, 747.9945pt x 178.5069pt>
 File: ../Imagenes//tipos_interpoladores.png Graphic file (type png)
 <use ../Imagenes//tipos_interpoladores.png>
 Package pdftex.def Info: ../Imagenes//tipos_interpoladores.png  used on input line 83.
 (pdftex.def)             Requested size: 448.80016pt x 107.10495pt.
-
-LaTeX Warning: Reference `fig:efectos_inter' on page 2 undefined on input line 90.
-
-<../Imagenes//efectos_inter.png, id=17, 820.2645pt x 346.896pt>
+<../Imagenes//efectos_inter.png, id=124, 820.2645pt x 346.896pt>
 File: ../Imagenes//efectos_inter.png Graphic file (type png)
 <use ../Imagenes//efectos_inter.png>
 Package pdftex.def Info: ../Imagenes//efectos_inter.png  used on input line 93.
 (pdftex.def)             Requested size: 410.13124pt x 173.44757pt.
 ) (Secciones/freeman_antecendentes.tex
-
-LaTeX Warning: Citation `freeman' on page 2 undefined on input line 16.
-
-
-LaTeX Warning: Reference `fig:fr_algoritmo' on page 2 undefined on input line 21.
-
-<../Imagenes//fr_algoritmo.png, id=18, 761.58125pt x 256.5585pt>
+<../Imagenes//fr_algoritmo.png, id=127, 761.58125pt x 256.5585pt>
 File: ../Imagenes//fr_algoritmo.png Graphic file (type png)
 <use ../Imagenes//fr_algoritmo.png>
 Package pdftex.def Info: ../Imagenes//fr_algoritmo.png  used on input line 26.
 (pdftex.def)             Requested size: 304.6271pt x 102.62158pt.
-[2 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/tipos_interpoladores.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/efectos_inter.png>]
-
-LaTeX Warning: Citation `freeman' on page 3 undefined on input line 34.
-
-
-LaTeX Warning: Citation `diccionario_shuji' on page 3 undefined on input line 39.
-
-
-LaTeX Warning: Citation `freeman' on page 3 undefined on input line 51.
-
-
-LaTeX Warning: Reference `fig:fr_dic' on page 3 undefined on input line 54.
-
-<../Imagenes//fr_diccionario.png, id=28, 976.3677pt x 605.47806pt>
+ [2 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/tipos_interpoladores.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/efectos_inter.png>]
+<../Imagenes//fr_diccionario.png, id=141, 976.3677pt x 605.47806pt>
 File: ../Imagenes//fr_diccionario.png Graphic file (type png)
 <use ../Imagenes//fr_diccionario.png>
 Package pdftex.def Info: ../Imagenes//fr_diccionario.png  used on input line 57.
 (pdftex.def)             Requested size: 292.91257pt x 181.6448pt.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 64.
-(C:\Users\latm_\AppData\Local\Programs\MiKTeX1\tex/latex/newtx\ot1minntx.fd
+ (C:\Users\latm_\AppData\Local\Programs\MiKTeX1\tex/latex/newtx\ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
@@ -889,48 +865,18 @@ File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 64.
  (C:\Users\latm_\AppData\Local\Programs\MiKTeX1\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-)
-
-LaTeX Warning: Reference `fig:fr_algoritmo' on page 3 undefined on input line 81.
-
-[3 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/fr_algoritmo.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/fr_diccionario.png>]
-
-LaTeX Warning: Citation `freeman' on page 4 undefined on input line 86.
-
-
-LaTeX Warning: Reference `fig:fr_prediccion' on page 4 undefined on input line 89.
-
-<../Imagenes//freeman_prediccion.png, id=42, 674.71272pt x 584.08614pt>
+) [3 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/fr_algoritmo.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/fr_diccionario.png>]
+<../Imagenes//freeman_prediccion.png, id=157, 674.71272pt x 584.08614pt>
 File: ../Imagenes//freeman_prediccion.png Graphic file (type png)
 <use ../Imagenes//freeman_prediccion.png>
 Package pdftex.def Info: ../Imagenes//freeman_prediccion.png  used on input line 93.
 (pdftex.def)             Requested size: 337.35553pt x 292.04234pt.
-
-LaTeX Warning: Citation `freeman' on page 4 undefined on input line 119.
-
-
-LaTeX Warning: Citation `freeman' on page 4 undefined on input line 127.
-
-
-LaTeX Warning: Reference `fig:fr_algoritmo' on page 4 undefined on input line 137.
-
-) (Secciones/Antecedentes_RedesConvolucionales.tex
-
-LaTeX Warning: Citation `RedesNeuronales' on page 4 undefined on input line 3.
-
-
-LaTeX Warning: Reference `fig:SRCNN_RedNeuronal' on page 4 undefined on input line 9.
-
-[4 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/freeman_prediccion.png>]
-<../Imagenes//Red_Neuronal.png, id=51, 788.34525pt x 560.0925pt>
+) (Secciones/Antecedentes_RedesConvolucionales.tex [4 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/freeman_prediccion.png>]
+<../Imagenes//Red_Neuronal.png, id=170, 788.34525pt x 560.0925pt>
 File: ../Imagenes//Red_Neuronal.png Graphic file (type png)
 <use ../Imagenes//Red_Neuronal.png>
 Package pdftex.def Info: ../Imagenes//Red_Neuronal.png  used on input line 14.
 (pdftex.def)             Requested size: 394.17166pt x 280.04556pt.
-
-
-LaTeX Warning: Citation `RedesConvolucionales' on page 5 undefined on input line 35.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--49
 
@@ -942,7 +888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--56
  []
 
 [5 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/Red_Neuronal.png>]
-<../Imagenes//Convolucion.png, id=63, 264.38776pt x 178.266pt>
+<../Imagenes//Convolucion.png, id=183, 264.38776pt x 178.266pt>
 File: ../Imagenes//Convolucion.png Graphic file (type png)
 <use ../Imagenes//Convolucion.png>
 Package pdftex.def Info: ../Imagenes//Convolucion.png  used on input line 60.
@@ -952,22 +898,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
-<../Imagenes//Grad_Des_1.png, id=64, 853.1875pt x 690.58pt>
+<../Imagenes//Grad_Des_1.png, id=185, 853.1875pt x 690.58pt>
 File: ../Imagenes//Grad_Des_1.png Graphic file (type png)
 <use ../Imagenes//Grad_Des_1.png>
 Package pdftex.def Info: ../Imagenes//Grad_Des_1.png  used on input line 72.
 (pdftex.def)             Requested size: 170.63448pt x 138.11354pt.
-
-LaTeX Warning: Reference `eqn:SRCNN_DescensoGradiente' on page 6 undefined on input line 90.
-
 [6 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/Convolucion.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/Grad_Des_1.png>]
-
-LaTeX Warning: Reference `eqn:SRCNN_Adam' on page 7 undefined on input line 105.
-
-
-LaTeX Warning: Reference `eqn:SRCNN_MSE' on page 7 undefined on input line 119.
-
-<../Imagenes//MSE.png, id=76, 452.28975pt x 454.69875pt>
+<../Imagenes//MSE.png, id=200, 452.28975pt x 454.69875pt>
 File: ../Imagenes//MSE.png Graphic file (type png)
 <use ../Imagenes//MSE.png>
 Package pdftex.def Info: ../Imagenes//MSE.png  used on input line 131.
@@ -976,37 +913,24 @@ Package pdftex.def Info: ../Imagenes//MSE.png  used on input line 131.
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family ptm in TS1 encoding.
 (textcomp)             Default family used instead on input line 11.
-
-
-LaTeX Warning: Citation `GANs' on page 7 undefined on input line 12.
-
-[7 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/MSE.png>]
-
-LaTeX Warning: Citation `SRGAN_Tesis' on page 8 undefined on input line 18.
-
-<../Imagenes//modelo_gen_disc.png, id=88, 425.08812pt x 154.07562pt>
+ [7 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/MSE.png>]
+<../Imagenes//modelo_gen_disc.png, id=213, 425.08812pt x 154.07562pt>
 File: ../Imagenes//modelo_gen_disc.png Graphic file (type png)
 <use ../Imagenes//modelo_gen_disc.png>
 Package pdftex.def Info: ../Imagenes//modelo_gen_disc.png  used on input line 30.
 (pdftex.def)             Requested size: 382.57578pt x 138.66676pt.
-<../Imagenes//discriminador.png, id=89, 921.94438pt x 351.3125pt>
+<../Imagenes//discriminador.png, id=214, 921.94438pt x 351.3125pt>
 File: ../Imagenes//discriminador.png Graphic file (type png)
 <use ../Imagenes//discriminador.png>
 Package pdftex.def Info: ../Imagenes//discriminador.png  used on input line 53.
 (pdftex.def)             Requested size: 368.77122pt x 140.5225pt.
-<../Imagenes//generador.png, id=90, 635.87563pt x 232.36812pt>
+<../Imagenes//generador.png, id=215, 635.87563pt x 232.36812pt>
 File: ../Imagenes//generador.png Graphic file (type png)
 <use ../Imagenes//generador.png>
 Package pdftex.def Info: ../Imagenes//generador.png  used on input line 73.
 (pdftex.def)             Requested size: 381.52832pt x 139.42194pt.
-[8 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/modelo_gen_disc.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/discriminador.png>]) (Secciones/Antecedentes_SRCNN.tex
-
-LaTeX Warning: Citation `freeman' on page 9 undefined on input line 3.
-
-
-LaTeX Warning: Citation `SRCNN' on page 9 undefined on input line 12.
-
-<../Imagenes//SRCNN_Arquitectura.png, id=101, 908.79526pt x 327.02174pt>
+ [8 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/modelo_gen_disc.png> <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/discriminador.png>]) (Secciones/Antecedentes_SRCNN.tex
+<../Imagenes//SRCNN_Arquitectura.png, id=228, 908.79526pt x 327.02174pt>
 File: ../Imagenes//SRCNN_Arquitectura.png Graphic file (type png)
 <use ../Imagenes//SRCNN_Arquitectura.png>
 Package pdftex.def Info: ../Imagenes//SRCNN_Arquitectura.png  used on input line 21.
@@ -1026,48 +950,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
-) (Secciones/freeman_implementacion.tex
-
-LaTeX Warning: Citation `freeman' on page 10 undefined on input line 10.
-
-
-LaTeX Warning: Citation `MIRFLICKR' on page 10 undefined on input line 17.
-
-) (Secciones/SRGAN_imp.tex
-<../Imagenes//proceso_gan.png, id=115, 516.93124pt x 346.79562pt>
+) (Secciones/freeman_implementacion.tex) (Secciones/SRGAN_imp.tex
+<../Imagenes//proceso_gan.png, id=242, 516.93124pt x 346.79562pt>
 File: ../Imagenes//proceso_gan.png Graphic file (type png)
 <use ../Imagenes//proceso_gan.png>
 Package pdftex.def Info: ../Imagenes//proceso_gan.png  used on input line 7.
 (pdftex.def)             Requested size: 310.16113pt x 208.07896pt.
-) [10]
-No file main.bbl.
-[11 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/proceso_gan.png>] (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.aux
+) [10] (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.bbl
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `es-mx'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `es'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `es'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `es'. Using the pattern for
+** the default language instead.
+) [11 <c:/Users/latm_/Desktop/Luis_Angel_Torres_Martinez/Maestria Robotica/Vision_1/Proyecto/Reporte/Super-resolution/Reporte/Imagenes/proceso_gan.png>] (c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  181A81EE5733DE40DD5C09EDB5F63071;4323.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 32B67A3D085274336EAE364679602A6C;4422.
  ) 
 Here is how much of TeX's memory you used:
- 19144 strings out of 478606
- 298886 string characters out of 2844548
- 614258 words of memory out of 3000000
- 36896 multiletter control sequences out of 15000+600000
- 533817 words of font info for 152 fonts, out of 8000000 for 9000
+ 19215 strings out of 478606
+ 300736 string characters out of 2844548
+ 616319 words of memory out of 3000000
+ 36949 multiletter control sequences out of 15000+600000
+ 534953 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,17n,88p,385b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\latm_\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk>{C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}
-!pdfTeX error: pdflatex (file txsyb): Font txsyb at 600 not found
- ==> Fatal error occurred, no output PDF file produced!
+ 67i,17n,88p,668b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\latm_\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk>{C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/enc/dvips/base/8r.enc}<C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/public/newtx/txexs.pfb><C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/public/txfonts/txsyb.pfb><C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/public/newtx/txsys.pfb><C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/urw/times/utmb8a.pfb><C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/urw/times/utmr8a.pfb><C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/urw/times/utmri8a.pfb><C:/Users/latm_/AppData/Local/Programs/MiKTeX1/fonts/type1/public/newtx/ztmr.pfb>
+Output written on "c:\Users\latm_\Desktop\Luis_Angel_Torres_Martinez\Maestria Robotica\Vision_1\Proyecto\Reporte\Super-resolution\Reporte\build\main.pdf" (11 pages, 2419825 bytes).
+PDF statistics:
+ 328 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+
