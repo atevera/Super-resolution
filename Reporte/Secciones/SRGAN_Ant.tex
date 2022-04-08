@@ -2,7 +2,7 @@
 
 El SISR (Single Image Super Resolution) es un problema inverso, \emph{it est}, que para una imagen de baja resolución puede haber muchas
 imágenes diferentes de alta resolución que le correspondan, esto basado en la interpretación del metodo utilizado, ya que
-el principio basico es añadir información para obtener imágenes de alta resolución.
+el principio básico es añadir información para obtener imágenes de alta resolución.
 Las CNN presentan un gran avance en la reconstrucción de imágenes de baja resolución a alta resolución,
 sin embargo, debido al escalado de la imagen o el hecho de que la imagen que se busca mejorar presenta grandes
 variaciones con respecto a las del dataset (\emph{Data Augmentation}) los resultados podrían ser no satisfactorios.
@@ -60,8 +60,8 @@ los datos muestreados de la distribución real de datos $P_{datos}(x)$.
 Por el contrario, el generador es una red neuronal convolucional inversa, hace exactamente lo opuesto de lo que hace una CNN, ya que 
 a estas se les da una imagen real como entrada y se espera una etiqueta clasificada como salida, 
 pero en el generador, un vector de ruido aleatorio\emph{(z)} se da como señal de entrada 
-y se espera una imagen falsa como salida, esta imagen debera aproximarse a la real a
-partir de una distribución pz(z) (en general una distribución Gaussiana) que
+y se espera una imagen falsa como salida, esta imagen deberá aproximarse a la real a
+partir de una distribución $P(z)$ (en general una distribución Gaussiana) que
 produce una muestra de datos falsos,$\tilde{x}$ es decir:
 
 \begin{equation}
@@ -76,14 +76,11 @@ G(z) = \tilde{x}
     \end{center}
 \end{figure}
     
-    \subsubsection{Funciones de perdida.}
-
-
-
+\subsubsection{Funciones de perdida.}
 
 
 
     
-    \subsubsection{Función de activación.}
+\subsubsection{Función de activación.}
 
 
