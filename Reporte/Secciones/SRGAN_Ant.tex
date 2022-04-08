@@ -1,7 +1,7 @@
 \subsection{SRGAN}
 
 El SISR (Single Image Super Resolution) es un problema inverso, \emph{it est}, que para una imagen de baja resolución puede haber muchas
-imágenes diferentes de alta resolución que le correspondan, esto basado en la interpretación del metodo utilizado, ya que
+imágenes diferentes de alta resolución que le correspondan, esto basado en la interpretación del método utilizado, ya que
 el principio básico es añadir información para obtener imágenes de alta resolución.
 Las CNN presentan un gran avance en la reconstrucción de imágenes de baja resolución a alta resolución,
 sin embargo, debido al escalado de la imagen o el hecho de que la imagen que se busca mejorar presenta grandes
@@ -78,7 +78,15 @@ G(z) = \tilde{x}
     
 \subsubsection{Funciones de perdida.}
 
+Como parte del entrenamiento se necesitan parámetros que nos describan de manera correcta los resultados
+que obtenemos de la predicción en nuestra red neuronal, para esto se hace el uso de funciones de perdida, estas funciones 
+evalúan la desviación entre las predicciones realizadas por la red neuronal y los valores 
+reales de las observaciones utilizadas durante el aprendizaje. Cuanto menor es el resultado de esta función, 
+más eficiente es la red neuronal. Su minimización, es decir, reducir al mínimo la desviación entre el valor predicho y
+el valor real para una observación dada, se hace ajustando los distintos pesos de la red neuronal.
 
+En el caso de las redes adversarias, específicamente en \emph{SRGAN} como mencionan Goodfellow et al. \cite{GANs}, se tienen 
+2 perdidas principales: Las de contenido (\emph{content loss}) definidas por las  las cuales son 
 
     
 \subsubsection{Función de activación.}
