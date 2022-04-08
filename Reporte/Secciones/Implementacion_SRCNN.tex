@@ -70,8 +70,19 @@ En cuanto al optimizador se utilizaron los siguientes valores de parámetros:
     \end{tabular}
 \end{table}
 
-Se utilizó un \emph{dataset} de 91 imagenes para el entrenamiento de todos los modelos desarrollados.
+Se utilizó un \emph{dataset} de 91 imagenes para el entrenamiento de todos los modelos desarrollados y la métrica utilizada fue el
+error cuadrático medio (MSE).
 
 \subsubsection{Entrenamiento del modelo SRCNN: RGB con factor de escalamiento 4}
-Este módelo se entrenó hasta 2525 epocas, donde cada epoca representa un "recorrido" completo a todo el dataset, es decir, para
-nuestro caso de 91 imagenes, que todas estas
+Este módelo se entrenó hasta 2525 epocas, donde cada epoca representa un "recorrido" completo a todo el dataset, es decir, un
+entrenamiento con todas las 91 imagenes del dataset. En la siguiente imagen se muestran los resultados del entrenamiento de la
+red desde la epoca 2475 hasta la epoca 2525.
+
+\begin{figure}[H]
+    \label{fig:SRCNN_MSE_TrainingLoss4RGB}
+    \centering
+    \includegraphics[width=10cm, height=6cm]{TrainingHistory_2475-2525_epochs_4RGB.png}
+    \caption{Minimización de función de costo (MSE) de red convolucional}
+\end{figure}
+
+Se observa 
