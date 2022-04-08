@@ -17,9 +17,9 @@ aprendizaje automático, esta fue desarrollada por Google.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[scale = 0.6]{Imp_generador.png}
+    \includegraphics[scale = 0.7]{Imp_generador.png}
     \caption{Arquitectura del generador de la SRGAN,\emph{k} es el tamaño del
-    filtro, \emph{n} es la dimensión del mapa de características (capa convolucionada) y \emph{s} indica
+    filtro, \emph{n} es la dimensión del mapa de características (capa de convolución) y \emph{s} indica
     el valor del parámetro stride. Imagen tomada de \cite{SRGAN}}
     \label{Alexis4}
   \end{center}
@@ -29,9 +29,9 @@ aprendizaje automático, esta fue desarrollada por Google.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[scale = 0.6]{Imp_discriminador.png}
+    \includegraphics[scale = 0.7]{Imp_discriminador.png}
     \caption{Arquitectura del Discriminador de la SRGAN, \emph{k} es el tamaño
-    del filtro, \emph{n} es la dimensión del mapa de características (capa convolucionada) y \emph{s}
+    del filtro, \emph{n} es la dimensión del mapa de características (capa de convolución) y \emph{s}
     indica el valor del parámetro stride. Imagen tomada de \cite{SRGAN}}
     \label{Alexis5}
   \end{center}
@@ -39,7 +39,9 @@ aprendizaje automático, esta fue desarrollada por Google.
 
 \subsubsection{Entrenamiento}
 
-EL modelo de entrenamiento de las GAN´s
+EL modelo de entrenamiento de las GAN´s como se ha mencionado en \cite{GANs} y \cite{SRGAN}, es un proceso en el cual
+los dos modelos compiten, el generador por engañar al discriminador y el discriminador por no permitirlo, en la figura \ref{Alexis6}
+podemos ver el proceso en el cual se basa el entrenamiento.
 
 \begin{figure}[H]
     \begin{center}
@@ -48,3 +50,6 @@ EL modelo de entrenamiento de las GAN´s
       \label{Alexis6}
     \end{center}
 \end{figure}
+
+
+

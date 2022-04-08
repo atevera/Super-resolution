@@ -20,15 +20,15 @@ competitiva que se mantiene entre los dos modelos. Por un lado,
 el generador tiene por objetivo crear nuevos datos que sean indistinguibles del
 conjunto de entrenamiento, mientras que el discriminador debe poder ser capaz
 de distinguir cuáles son los datos creados y los reales, siendo los últimos los que corresponden
- al conjunto de entrenamiento. Esto resulta en un proceso iterativo donde estos dos modelos
+ al conjunto de entrenamiento como se ve en la imagen \ref{Alexis1}. Esto resulta en un proceso iterativo donde estos dos modelos
  se desafían uno a otro, logrando un ajuste de parámetros
  que logran producir datos que se parezcan con gran acierto a los reales.
  
 
 \begin{figure}[H]
     \begin{center}
-      \includegraphics[scale = 0.9]{modelo_gen_disc.png}
-      \caption{Modelo Generador y Discriminador}
+      \includegraphics[scale = 0.7]{GANmodelo.jpg}
+      \caption{Enfoques del Modelo Generador y Discriminador}
       \label{Alexis1}
     \end{center}
 \end{figure}
@@ -47,7 +47,7 @@ tenemos al discriminador el cual es una red neuronal convolucional que consta de
 capas ocultas y una capa de salida, la principal diferencia aquí es que la capa de salida de las GAN puede tener solo dos salidas, 
 a diferencia de las CNN, que pueden tener un número diferente de salidas con respecto a la cantidad de etiquetas en las que está entrenado.
 La salida del discriminador puede ser 1 o 0 dependiendo de la función de activación que se aplique. Si la salida es 1, 
-entonces los datos proporcionados son reales y si la salida es 0, entonces se refiere a ellos como datos falsos.
+entonces los datos proporcionados son reales y si la salida es 0, entonces se refiere a ellos como datos falsos como se ve en la imagen \ref{Alexis2}.
 
 El discriminador está capacitado con los datos del dataset, con estos aprende a reconocer cómo se ven y qué características deben 
 clasificarse como reales, formalmente, discrimina entre $\tilde{x}$, la muestra falsa, y $x$, 
@@ -70,7 +70,7 @@ a estas se les da una imagen real como entrada y se espera una etiqueta clasific
 pero en el generador, un vector de ruido aleatorio\emph{(z)} se da como señal de entrada 
 y se espera una imagen falsa como salida, esta imagen deberá aproximarse a la real a
 partir de una distribución $P(z)$ (en general una distribución Gaussiana) que
-produce una muestra de datos falsos,$\tilde{x}$ es decir:
+produce una muestra de datos falsos,$\tilde{x}$ como se muestra en la imagen \ref{Alexis3}
 
 \begin{equation}
 G(z) = \tilde{x}
