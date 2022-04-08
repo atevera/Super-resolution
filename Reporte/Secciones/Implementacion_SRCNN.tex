@@ -72,16 +72,115 @@ En cuanto al optimizador se utilizaron los siguientes valores de parámetros:
 Se utilizó un \emph{dataset} de 91 imagenes para el entrenamiento de todos los modelos desarrollados y la métrica utilizada fue el
 error cuadrático medio (MSE).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Entrenamiento del módelo RGB con factor de escalamiento de 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Entrenamiento del modelo SRCNN: RGB con factor de escalamiento 4}
-Este módelo se entrenó hasta 2525 epocas, donde cada epoca representa un "recorrido" completo a todo el dataset, es decir, un
-entrenamiento con todas las 91 imagenes del dataset. En la siguiente imagen se muestran los resultados del entrenamiento de la
-red desde la epoca 2475 hasta la epoca 2525.
+Previo al entrenamiento de este módelo fue necesario \emph{normalizar} la imagen, por lo cual primero se divide la imagen entre
+255, dado que se entrena sobre los 3 canales $RGB$ y recordemos que el espacio de color RGB puede tomar valores en el intervalo
+$[0-255]$ por cada canal. El \emph{normalizado} de la imagen se realiza con el fin de que la red varíe su salida en un intervalo
+de $[0-1]$, de esta forma \emph{reducimos} la variación de los parámetros de la red.\\
+Este módelo fue entrenado hasta 2525 epocas, donde cada epoca representa un recorrido completo a todo el dataset, es decir, un
+entrenamiento con todas las 91 imagenes que tiene el dataset. En la imagen \ref{fig:SRCNN_MSE_TrainingLoss4RGB} se muestran
+los resultados del entrenamiento de la red desde la epoca 2475 hasta la epoca 2525.
 
 \begin{figure}[H]
-    \label{fig:SRCNN_MSE_TrainingLoss4RGB}
     \centering
-    \includegraphics[width=10cm, height=6cm]{TrainingHistory_2475-2525_epochs_4RGB.png}
-    \caption{Minimización de función de costo (MSE) de red convolucional}
+    \includegraphics[scale=0.35]{TrainingHistory_2475-2525_epochs_4RGB.png}
+    \caption{Minimización de función de costo (MSE) de red convolucional RGB con factor de escalamiento 4}
+    \label{fig:SRCNN_MSE_TrainingLoss4RGB}
 \end{figure}
 
-Se observa 
+Cabe mencionar que esto fue un re-entrenamiento de la red, es decir, partimos del módelo que ya teniamos generado hasta las 2475
+epocas y desde ese punto comenzamos el nuevo entrenamiento de la red. Los resultados de entrenamiento previos a los resultados
+que se observan en la figura \ref{fig:SRCNN_MSE_TrainingLoss4RGB} no se muestran en este documento, ya que la información que
+proporcionan no resulta muy legible. En la figura \ref{fig:SRCNN_MSE_TrainingProcess4RGB} se observa gradualmente el proceso de
+entrenamiento de la red conforme transcurría la epoca $i$ de entrenamiento.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{ProcesoEntrenamiento_RGB4.png}
+    \caption{Proceso de aprendizaje de la red convolucional RGB con factor de escalamiento de 4}
+    \label{fig:SRCNN_MSE_TrainingProcess4RGB}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Entrenamiento del módelo RGB con factor de escalamiento de 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Entrenamiento del modelo SRCNN: RGB con factor de escalamiento 2}
+Se realizó, de igual manera que en el caso anterior, un normalizado de la imagen a modo de \emph{pre-procesamiento} de imagen.
+Este módelo fue entrenado desde 0 hasta 350 epocas. En la imagen \ref{fig:SRCNN_MSE_TrainingLoss2RGB} se muestran los resultados
+del entrenamiento de la red durante las primeras 200 epocas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{TrainingHistory_0-200_epochs_2RGB.png}
+    \caption{Minimización de función de costo (MSE) de red convolucional RGB con factor de escalamiento 2}
+    \label{fig:SRCNN_MSE_TrainingLoss2RGB}
+\end{figure}
+
+A diferencia del caso anterior, este módelo fue entrenado menor cantidad de epocas, por lo que los resultados que se observan
+ en la figura \ref{fig:SRCNN_MSE_TrainingLoss2RGB} se pueden leer de manera más adecuada. En la figura
+ \ref{fig:SRCNN_MSE_TrainingProcess2RGB} se observa gradualmente el proceso de entrenamiento de la red conforme transcurría la
+ epoca $i$ de entrenamiento.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{ProcesoEntrenamiento_RGB2.png}
+    \caption{Proceso de aprendizaje de la red convolucional RGB con factor de escalamiento de 2}
+    \label{fig:SRCNN_MSE_TrainingProcess2RGB}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Entrenamiento del módelo YCrCb con factor de escalamiento de 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Entrenamiento del modelo SRCNN: $YC_rC_b$ con factor de escalamiento 4}
+Fue mencionado anteriormente en este documento, que, cuando se entrena el módelo en el espacio de color $YC_rC_b$, únicamente se
+maneja el canal $Y$ de este espacio de color. Por lo que debemos realizar un pre-procesamiento de la imagen de la siguiente manera:
+\begin{enumerate}
+    \item Convertimos del espacio de color $RGB$ a $YC_rC_b$ pero sin haber normalizado la imagen RGB, es decir, con sus valores en el rango $[0-255]$
+    \item Normalizamos esta imagen convertida. Para ello dividimos la imagen entre 255, y esta imagen será la entrada a nuestra red.
+\end{enumerate}
+Este módelo fue entrenado desde 0 hasta 250 epocas. En las siguientes figuras respectivamente se muestran los resultados del
+entrenamiento de la red desde 0 a 200 epocas y después un \emph{re-entrenamiento} de 200 a 250 epocas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.15]{TrainingHistory_0-200_epochs_4Y.png}
+    \caption{Minimización de función de costo (MSE) de red convolucional $YC_rC_b$ con factor de escalamiento 4}
+    \label{fig:SRCNN_MSE_TrainingLoss4Y1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.15]{TrainingHistory_200-250_epochs_4Y.png}
+    \caption{Minimización de función de costo (MSE) de red convolucional $YC_rC_b$ con factor de escalamiento 4}
+    \label{fig:SRCNN_MSE_TrainingLoss4Y2}
+\end{figure}
+
+En la figura \ref{fig:SRCNN_MSE_TrainingProcess4Y} se observa gradualmente el proceso de entrenamiento de la red conforme
+transcurría la epoca $i$ de entrenamiento.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{ProcesoEntrenamiento_Y4.png}
+    \caption{Proceso de aprendizaje de la red convolucional $YC_rC_b$ con factor de escalamiento de 4}
+    \label{fig:SRCNN_MSE_TrainingProcess4Y}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Entrenamiento del módelo YCrCb con factor de escalamiento de 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Entrenamiento del modelo SRCNN: $YC_rC_b$ con factor de escalamiento 2}
+Se realiza el mismo procedimiento que en el caso anterior para \emph{pre-procesar} la imagen.
+Este módelo fue entrenado desde 0 hasta 250 epocas. En las siguiente figura \ref{fig:SRCNN_MSE_TrainingLoss2Y} se muestran los
+resultados del entrenamiento de la red.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.15]{TrainingHistory_0-250_epochs_2Y.png}
+    \caption{Minimización de función de costo (MSE) de red convolucional $YC_rC_b$ con factor de escalamiento 2}
+    \label{fig:SRCNN_MSE_TrainingLoss2Y}
+\end{figure}
+
+En la figura \ref{fig:SRCNN_MSE_TrainingProcess2Y} se observa gradualmente el proceso de entrenamiento de la red conforme
+transcurría la epoca $i$ de entrenamiento.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.45]{ProcesoEntrenamiento_Y2.png}
+    \caption{Proceso de aprendizaje de la red convolucional $YC_rC_b$ con factor de escalamiento de 2}
+    \label{fig:SRCNN_MSE_TrainingProcess2Y}
+\end{figure}
