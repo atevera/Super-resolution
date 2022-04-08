@@ -106,7 +106,15 @@ características de una imagen reconstruida $G_{\theta G}(l^{LR})$ y la imagen d
   (G_{\theta G}(l^{LR}))_{x,y})^{2}
 \end{equation}
 
-    
+Por otra parte tenemos la perdida adversaria, esta se añade el componente generador de nuestro modelo GAN a la perdida perceptual,
+esto promueve que nuestra red cree soluciones que engañen al discriminador. Las perdidas del generador $l_{Gen}^{SR}$ se definen
+en base a las probabilidades del modelo discriminador $D_{\theta D}(G_{\theta G}(l^{LR}))$ sobre las muestras de entrenamiento
+de la siguiente manera:
+
+\begin{equation}
+  l_{Gen}^{SR}=\sum_{n=1}^{N}-log \ D_{\theta D}(G_{\theta G}(l^{LR}))
+\end{equation}
+
 \subsubsection{Función de activación, Normalización y b}
 
 
