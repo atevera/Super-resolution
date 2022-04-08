@@ -42,7 +42,7 @@ la baja resolución. Para esta implementación se consideró un factor $\Omega =
 Como se presenta en la Figura \ref{fig:fr_interpolacion}, ambas imágenes 
 rquieren ser filtradas (para reducir la cantidad de información innecesaria)
 y normalizadas (con el objetivo de generalizar el algoritmo) para realizar el
-proceso de segmentación. Para el filtro pasa-altas, se utilizó la función de\
+proceso de segmentación. Para cada imagen filtrada $\text{img}?f$ se utilizó la función de\
 \emph{OpenCV} \emph{GaussianBlur} considerando una desviación estándar $\sigma = 1$
 con el fin de restar la imagen desenfocada (frecuencias medias y bajas) a la imagen 
 original para dejar sólo las frecuencias altas (detalles) tal como se presenta
@@ -53,14 +53,15 @@ en la expresión \eqref{eqn:filtroPH}.
     \text{img}_f = \text{img} - \text{\emph{cv2.GaussianBlur(img, }(0,0),}\, \sigma)
 \end{align}
 
-Respecto al proceso de normalización, se consideró la expresión \eqref{eqn:normalizado}.
+Para obtener la imagen normalizada $\text{img}_n$ se consideró la expresión \eqref{eqn:normalizado}.
 
 \begin{align}
     \label{eqn:normalizado}
     \text{img}_n = \frac{\text{img}_f-\text{min}(\text{img}_f)}{\text{max}(\text{img}_f)-\text{min}(\text{img}_f)}\cdot 255
 \end{align}
 
-De esta manera, el \emph{segmentador} puede realizar un barrido bidimensional en cada imagen 
+De esta manera, el \emph{segmentador} puede realizar un barrido bidimensional (de acuerdo a 
+la Figura \ref{fig:fr_dic}) en cada imagen 
 con el objetivo de recolectar los parches en alta y baja resolución con 
 dimensiones de $5x5$ y $7x7$ respectivamente.
 
@@ -72,9 +73,50 @@ dimensiones de $5x5$ y $7x7$ respectivamente.
 \end{figure}
 
 Posteriormente, el parche de baja resolución es reordenado para formar un 
-vector fila en $\mathbb{R}^{147}$ para concatenarse con el vector de superposición
-(en $\mathbb{R}^{30})$ que considera la primera fila y primera columna del
+vector fila en $\mathbb{R}^{1\times147}$ para concatenarse con el vector de superposición
+(en $\mathbb{R}^{1\times30})$ que considera la primera fila y primera columna del
 parche de alta resolución. A dicha concatenación se le nombrará como 
 \emph{vector de búsqueda}. En la Figura \ref{fig:fr_segmentador} puede observarse
 al conjunto de vectores de búsqueda que serán guardados en el \emph{diccionario}
 junto con los parches de alta resolución. 
+
+El proceso anterior es realizado para cada imagen y dado que cada una es de 
+dimensiones diferentes, el número de parches será distinto. Cabe 
+destacar que el almacenamiento de los 154,125 vectores realizó
+mediante el paquete \emph{h5py} en el archivo \emph{diccionario.h5},
+ya que es recomendable para su implementación en algoritmos de búsqueda. 
+
+\subsubsection{Algoritmo de búsqueda}
+\noindent
+Una vez construido el \emph{diccionario}, es necesario establecer el algoritmo de 
+búsqueda para que cuando se realice la segmentación de la imagen a mejorar 
+su resolución se busquen los parches de alta resolución de acuerdo al 
+\emph{vector de búsqueda}.
+
+Para esto, \cite{freeman} propone el uso de algoritmos de búsqueda como 
+\emph{el vecino más cercano} para encontrar al vector más próximo a la solicitud
+y con ello asociar al parche de alta resolución correspondiente. 
+
+Utilizando la función \emph{NearestNeighbors} del paquete \emph{sklearn.neighbors}
+la implementación resulta sencilla una vez ordenados todos los vectores en el 
+diccionario. 
+
+Para verificar que el algoritmo funciona adecuadamente, se ha propuesto un 
+parche externo de baja resolución (\emph{solicitud}) para 
+que encuentre al parche de baja resolución más cercano que esté dentro del
+\emph{diccionario} y asocie con el parche de alta resolución. En la Figura
+\ref{fig:fr_vecinos} puede observarse que el primer pixel tiene un color 
+diferente y aun así realiza la aproximación adecuadamente en 8.9 $s$. 
+
+\begin{figure}[H]
+    \includegraphics[scale = 0.6]{ fr_vecinos.png }
+    \centering
+    \caption{ Ejemplo de búsqueda de parches en diccionario}
+    \label{fig:fr_vecinos}
+\end{figure}
+
+Observe que el tiempo de búsqueda determina en cierta medida el tiempo 
+que le llevará al algoritmo mejorar la resolución de una imagen de 
+entrada. Por lo mismo debe de considerarse el tamaño de entrada con el 
+objetivo de no realizar mejoras de resolución a imagenes con dimensiones
+\emph{muy grandes}.
