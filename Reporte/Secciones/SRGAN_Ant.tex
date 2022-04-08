@@ -33,6 +33,13 @@ de distinguir cuáles son los datos creados y los reales, siendo los últimos lo
     \end{center}
 \end{figure}
 
+
+El modelo SRGAN (Super Resolution Generative Adversarial Network) fue
+propuesto en 2016 por un grupo de investigadores\cite{SRGAN}.
+La principal innovación de este modelo es su función de pérdida, llamada
+función de pérdida perceptual, que permite mejorar el realismo de la imagen de
+salida.
+
 \subsubsection{Componentes.}
 
 Profundizando un poco más en los componentes del algoritmo, en especifico, el uso de las \emph{GAN´s} para la obtención de Super-Resolución (\emph{SRGAN}), 
@@ -115,6 +122,7 @@ de la siguiente manera:
   l_{Gen}^{SR}=\sum_{n=1}^{N}-log \ D_{\theta D}(G_{\theta G}(l^{LR}))
 \end{equation}
 
-\subsubsection{Función de activación, Normalización y b}
 
+Donde $D_{\theta D}(G_{\theta G}(l^{LR}))$ es la probabilidad de que nuestra imagen reconstruida $G_{\theta G}(l^{LR})$ sea 
+una imagen de alta resolución y la función logarítmica nos ayuda con el comportamiento del gradiente. 
 

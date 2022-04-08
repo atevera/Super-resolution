@@ -1,2 +1,26 @@
 \subsection{SRGAN}
-
+Las GANs presentan varios desafíos a eludir durante su entrenamiento [6] y
+que son actualmente temas de investigación. Entre ellos, los problemas más
+usuales que surgen en el entrenamiento de una GAN son:
+No convergencia
+El generador y el discriminador no logran alcanzar un equilibrio. La
+función de pérdida del generador y discriminador empiezan a oscilar sin
+poder lograr a largo plazo una estabilidad.
+Si bien es común en las GAN que en un comienzo las funciones de pérdida
+oscilen, a medida que transcurre el entrenamiento el objetivo es que se
+logre una estabilidad. Cuando esto no ocurre, las muestras son producidas
+por el generador, pero su calidad no mejora.
+Colapso modal
+Esto ocurre cuando el generador produce muestras similares aunque las
+entradas sean de muy diversas características. El generador encuentra que
+un conjunto pequeño de muestras engañan al discriminador y entonces
+no es capaz de producir otras. En estos casos, el gradiente de la función
+de pérdida queda estancado en un valor cercano a 0.
+Pérdida no informativa
+Aunque parezca natural pensar que cuanto menor sea la pérdida del
+generador, mayor será la calidad de las muestras que produce, esto no
+resulta tan inmediato. La pérdida del generador debe ser comparada con
+la del discriminador, que se encuentra en constante mejora. Por lo tanto,
+no es tan sencillo evaluar la mejora del modelo. El generador podría estar
+produciendo muestras cada vez de mayor calidad, aun cuando la función
+de pérdida se vaya incrementando.
