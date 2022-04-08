@@ -97,7 +97,7 @@ Para esto, \cite{freeman} propone el uso de algoritmos de búsqueda como
 \emph{el vecino más cercano} para encontrar al vector más próximo a la solicitud
 y con ello asociar al parche de alta resolución correspondiente. 
 
-Utilizando la función \emph{NearestNeighbors} del paquete \emph{sklearn.neighbors}
+Utilizando la función \emph{NearestNeighbors} del paquete \emph{sklearn.neighbors} \cite{scikit-learn},
 la implementación resulta sencilla una vez ordenados todos los vectores en el 
 diccionario. 
 
@@ -106,7 +106,8 @@ parche externo de baja resolución (\emph{solicitud}) para
 que encuentre al parche de baja resolución más cercano que esté dentro del
 \emph{diccionario} y asocie con el parche de alta resolución. En la Figura
 \ref{fig:fr_vecinos} puede observarse que el primer pixel tiene un color 
-diferente y aun así realiza la aproximación adecuadamente en 8.9 $s$. 
+diferente y aun así realiza la aproximación adecuadamente en 8.9 $s$
+utilizando el algoritmo \emph{Ball Tree}.  
 
 \begin{figure}[H]
     \includegraphics[scale = 0.6]{ fr_vecinos.png }
@@ -115,8 +116,22 @@ diferente y aun así realiza la aproximación adecuadamente en 8.9 $s$.
     \label{fig:fr_vecinos}
 \end{figure}
 
-Observe que el tiempo de búsqueda determina en cierta medida el tiempo 
-que le llevará al algoritmo mejorar la resolución de una imagen de 
-entrada. Por lo mismo debe de considerarse el tamaño de entrada con el 
-objetivo de no realizar mejoras de resolución a imagenes con dimensiones
-\emph{muy grandes}.
+De igual forma en la Tabla \ref{fig:fr_vecinos} se presentan otros algoritmos 
+que de acuerdo a \cite{NN_search} cuenta la función utilizada. Note que 
+para fines de eficiencia, resulta más conviente el uso del algoritmo
+\emph{Ball Tree} para evitar consumo excesivo de tiempo. 
+
+\begin{table}[H]
+    \caption{Tiempos de algoritmo de búsqueda}
+    \label{tb:tiempos_snn}
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    Algoritmo    & Tiempo {[}s{]} \\ \hline
+    Auto         & 9.8            \\ \hline
+    Fuerza Bruta & 9.5            \\ \hline
+    KD Tree      & 9.5            \\ \hline
+    Ball Tree    & 8.9            \\ \hline
+    \end{tabular}
+\end{table}
+
