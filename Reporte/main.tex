@@ -7,7 +7,7 @@
 % ecuaciones, símbolos e importar código. Según yo son los necesarios para hacer
 % el reporte. Pero de igual forma verificar y agregar según conveniencia. 
 \input{paquetes}
-
+\decimalpoint
 \hypersetup{breaklinks=true}
 
 
@@ -37,6 +37,7 @@
 
 
 \begin{document}
+    \renewcommand{\tablename}{Tabla}
     \bstctlcite{IEEEexample:BSTcontrol}
     \title{Métodos para súper-resolución de imágenes}
     
@@ -87,11 +88,13 @@
     \section{Resultados}
     \input{Secciones/resultados.tex}
 
-    \section{Discusión}
-
 
     \section{Conclusiones}
-    \noindent buenas buenas 
+    \input{Secciones/conclusiones.tex}
+
+
+    \section{Discusión}
+
 
     \Urlmuskip=0mu plus 1mu\relax
     \bibliographystyle{IEEEtran}
