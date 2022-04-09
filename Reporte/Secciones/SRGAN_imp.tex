@@ -18,6 +18,23 @@ que las imágenes son muy variadas por lo cual es ideal en el entrenamiento de u
 de mejorar los detalles de una imagen. Cabe resaltar que no se utilizaron todas las imágenes del dataset
 debido al tiempo de ejecución del entrenamiento, así como las limitantes de hardware al ejecutar el código.
 
+\subsubsection{VGG19.}
+
+VGG19 (Visual Geometry Group) es la red convolucional pre-entrenado que se utilizara en el código
+dedicada a la clasificación de imágenes ,consta de 16 capas convolucionales, 3 capas completamente conectadas, 5 capas de 
+Maxpooling (Valores máximos de los parches)  y 1 capa de SoftMax como se observa en la imagen \ref{Alexis35}. El modelos se construyo
+ con imagenet(base de datos) cuya salida son las características de la imagen extraídas en el tercer bloque de el modelo (pesos),
+ esta red será la que utilizaremos durante el entrenamiento con el fin de optimizar el proceso del entrenamiento de la red
+ya que sin el se saturaría el tiempo de ejecución.
+
+ 
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[scale = 0.7]{VGG19.jpg}
+    \caption{Arquitectura de la red VGG19}
+    \label{Alexis35}
+  \end{center}
+\end{figure}
 
 
 \subsubsection{Modelo generador.}
