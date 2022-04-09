@@ -76,7 +76,7 @@ aun así la reconstrucción es buena y se logran percibir algunos detalles.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[scale = 0.2]{13im_200E.png}
+    \includegraphics[scale = 0.4]{13im_200E.png}
     \caption{Imagen obtenida de un modelo generador de 200 épocas y 13 imágenes.}
     \label{Alexis7}
   \end{center}
@@ -85,11 +85,11 @@ aun así la reconstrucción es buena y se logran percibir algunos detalles.
 Conforme se aumentan las épocas de entrenamiento y el número de imágenes se comprueba
 que los resultados son mejores como se observa en la imagen \ref{Alexis8} donde se aumentan
 las épocas a 400 y el numero de imágenes a 50, con lo que podemos obtener mas detalles en nuestro modelo
-gracias a al diversidad en estas imagenes.
+gracias a al diversidad en estas imágenes.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[scale = 0.2]{50im_400E.png}
+    \includegraphics[scale = 0.9]{50im_400E.png}
     \caption{Imagen obtenida de un modelo generador de 400 épocas y 50 imágenes.}
     \label{Alexis8}
   \end{center}
@@ -103,7 +103,7 @@ incluso se puede aumentar la perdida.
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[scale = 0.2]{1000im_5E_Reentrenado.png}
+    \includegraphics[scale = 0.57]{1000im_5E_Reentrenado.png}
     \caption{Imagen obtenida de un modelo generador entrenado a partir de 400 épocas y 50 imágenes cargado
     en el programa y luego entrenado a 5 épocas y 1000 imágenes.}
     \label{Alexis9}
@@ -115,7 +115,14 @@ incluso se puede aumentar la perdida.
 
 \subsubsection{Métricas}
 
- Durante el entrenamiento se tiene
+ Durante el entrenamiento podemos observar el tiempo que tarda nuestra red en realizar el entrenamiento, aunado a eso 
+ podemos medir las perdidas de los modelos, dados los antecedentes, se tiene que las perdidas nos relacionan la mejora de la imagen
+ a menor valor de perdida exista, mejor será la calidad del modelo generador, para el modelo discriminador ocurre lo mismo,
+ entre menor sea el número, mejor podrá discernir entre una imagen generada y una real.
+
+ Finalmente se puede observar que la Precisión del modelo generador tiende a un valor de 1,(100\%) esto quiere decir que
+ en esa época sabrá discernir perfectamente una imagen de la otra, forzando al generador a tener menos perdida. Esto puede observarse en las
+ gráficas de la imagen \ref{Alexis10}.
 
  \begin{table}[H]
   \centering
