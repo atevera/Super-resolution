@@ -18,11 +18,15 @@ que las imágenes son muy variadas por lo cual es ideal en el entrenamiento de u
 de mejorar los detalles de una imagen. Cabe resaltar que no se utilizaron todas las imágenes del dataset
 debido al tiempo de ejecución del entrenamiento, así como las limitantes de hardware al ejecutar el código.
 
-Las imágenes originales del dataset son de una dimensión de 500x500 pixeles, para el modelo generador
-se utiliza una imagen de entrada de baja resolución de 32x32 pixeles y la imagen de alta resolución de salida
-será de 128x128 pixeles, teniendo un escalado de 4 veces el tamaño original. 
+
 
 \subsubsection{Modelo generador.}
+
+Las imágenes originales del dataset son de una dimensión de 500x500 pixeles, para el modelo generador
+se utiliza una imagen de entrada de baja resolución de 32x32 pixeles y la imagen de alta resolución de salida
+será de 128x128 pixeles, teniendo un escalado de 4 veces el tamaño original, algunas de estas imágenes pueden
+visualizarse en la imagen \ref{fig:fr_dataset}.
+
 
 
 
@@ -65,9 +69,52 @@ podemos ver el proceso en el cual se basa el entrenamiento.
 \end{figure}
 
 
-Para lograr
+Después de realizar las épocas de entrenamiento se puede apreciar que a mayor numero de imágenes y 
+épocas los resultados suelen ser mejores sobre todo para imágenes que no están en el dataset,en la imagen
+\ref{Alexis7} podemos observar la mejora que se obtiene con 200 épocas de entrenamiento para tan solo 13 imágenes 
+aun así la reconstrucción es buena y se logran percibir algunos detalles.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[scale = 0.2]{13im_200E.png}
+    \caption{Imagen obtenida de un modelo generador de 200 épocas y 13 imágenes.}
+    \label{Alexis7}
+  \end{center}
+\end{figure}
+
+Conforme se aumentan las épocas de entrenamiento y el número de imágenes se comprueba
+que los resultados son mejores como se observa en la imagen \ref{Alexis8} donde se aumentan
+las épocas a 400 y el numero de imágenes a 50, con lo que podemos obtener mas detalles en nuestro modelo
+gracias a al diversidad en estas imagenes.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[scale = 0.2]{50im_400E.png}
+    \caption{Imagen obtenida de un modelo generador de 400 épocas y 50 imágenes.}
+    \label{Alexis8}
+  \end{center}
+\end{figure}
+
+Una solución a este problema es realizar la carga del modelo generador antes del entrenamiento,
+con esto el modelo generador toma la configuración de pesos y métricas anteriores y realiza el entrenamiento
+a partir de estas, esto puede generar una mejora como se observa en la imagen \ref{Alexis9}, pero
+también puede causar distorsión en el modelo que obtengamos como resultado, dada la interpretación del generador,
+incluso se puede aumentar la perdida.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[scale = 0.2]{1000im_5E_Reentrenado.png}
+    \caption{Imagen obtenida de un modelo generador entrenado a partir de 400 épocas y 50 imágenes cargado
+    en el programa y luego entrenado a 5 épocas y 1000 imágenes.}
+    \label{Alexis9}
+  \end{center}
+\end{figure}
+
+
+
 
 \subsubsection{Métricas}
+
  Durante el entrenamiento se tiene
 
  \begin{table}[H]
@@ -81,3 +128,13 @@ Para lograr
   Precisión Discriminador         & 1.0                            & 0.8630597014925373       \\ \hline
   \end{tabular}
 \end{table}
+
+
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[scale = 0.6]{Graficasperdidas.png}
+    \caption{Resultados de las perdidas durante el entrenamiento (2000 imágenes, 100 épocas)}
+    \label{Alexis10}
+  \end{center}
+\end{figure}
