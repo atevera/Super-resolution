@@ -168,7 +168,7 @@ con el objetivo de encontrar el óptimo. En la Figura \ref{fig:fr_alphas}
 se presentan algunos de los valores utilizados. 
 
 \begin{figure}[H]
-    \includegraphics[scale = 0.4]{ fr_alphas.png }
+    \includegraphics[scale = 0.55]{ fr_alphas.png }
     \centering
     \caption{ Variación en parámetro de superposición $\alpha$ }
     \label{fig:fr_alphas}
@@ -176,5 +176,7 @@ se presentan algunos de los valores utilizados.
 
 Observe que el parámetro de superposición permite enfatizar los detalles de
 la imagen de altas frecuencias e indirectamente los detalles de la
-imagen con mejor resolución. 
-
+imagen con mejor resolución. Sin embargo, a valores altos tiende a agregarse
+ruido a la imagen y por lo tanto la definición decrece nuevamente. Para la 
+sección de resultados se ha considerado utilizar un $\alpha=0.05$ tal como 
+recomienda el autor. 
