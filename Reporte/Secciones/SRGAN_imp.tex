@@ -12,8 +12,21 @@ Para el entrenamiento de las redes, Keras utiliza una de las tres librerías com
 se utiliza \emph{TensorFlow}, que es una librería de Python de código abierto para el
 aprendizaje automático, esta fue desarrollada por Google.
 
+Utilizaremos el dataset MIRFLICKR \cite{MIRFLICKR} el cual es una base de datos de imágenes
+extraídas de la red social flickr, esta base consta de 25000 imágenes y la principal ventaja es 
+que las imágenes son muy variadas por lo cual es ideal en el entrenamiento de una red neuronal capaz 
+de mejorar los detalles de una imagen. Cabe resaltar que no se utilizaron todas las imágenes del dataset
+debido al tiempo de ejecución del entrenamiento, así como las limitantes de hardware al ejecutar el código.
+
+Las imágenes originales del dataset son de una dimensión de 500x500 pixeles, para el modelo generador
+se utiliza una imagen de entrada de baja resolución de 32x32 pixeles y la imagen de alta resolución de salida
+será de 128x128 pixeles, teniendo un escalado de 4 veces el tamaño original. 
 
 \subsubsection{Modelo generador.}
+
+
+
+
 
 \begin{figure}[H]
   \begin{center}
@@ -52,4 +65,19 @@ podemos ver el proceso en el cual se basa el entrenamiento.
 \end{figure}
 
 
+Para lograr
 
+\subsubsection{Métricas}
+ Durante el entrenamiento se tiene
+
+ \begin{table}[H]
+  \centering
+  \caption{Resultados Máximo y Mínimos de las perdidas.}
+  \begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Criterio} & \textbf{Valor Máximo} & \textbf{Valor Mínimo}  \\ \hline
+  Pérdida del Generador           & 228.5551261019351              & 23.898190839255033     \\
+  Pérdida del Discriminador       & 1.236285184701566              & 1.6890162633455543e-16  \\
+  Precisión Discriminador         & 1.0                            & 0.8630597014925373       \\ \hline
+  \end{tabular}
+\end{table}
