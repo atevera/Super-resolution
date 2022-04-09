@@ -14,8 +14,8 @@ Database file #1: bibliografia.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** IEEEtran BST control entry "IEEEexample:BSTcontrol" detected.
-Warning--empty journal in SRGAN
 Warning--empty journal in SRCNN
+Warning--empty journal in SRGAN
 Warning--empty journal in Resnet
 
 Done.

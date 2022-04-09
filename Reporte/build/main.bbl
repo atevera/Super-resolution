@@ -21,16 +21,28 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{freeman}
+W.~T. Freeman, T.~R. Jones, and E.~C. Pasztor, ``Example-based
+  super-resolution,'' \emph{Image-Based Modeling, Rendering, and Lighting},
+  2002.
+
+\bibitem{SRCNN}
+\BIBentryALTinterwordspacing
+C.~Dong, C.~C. Loy, K.~He, and X.~Tang, ``Image super-resolution using deep
+  convolutional networks,'' 2015. [Online]. Available:
+  \url{https://arxiv.org/abs/1501.00092}
+\BIBentrySTDinterwordspacing
+
+\bibitem{SRGAN}
+C.~Ledig, L.~Theis, F.~Huszar, J.~Caballero, A.~Acosta, A.~Aitken, A.~Tejani,
+  J.~Totz, Z.~Wang, and W.~Shi, ``Photo-realistic single image super-resolution
+  using a generative adversarial network,'' pp. 105--114, 07 2017.
+
 \bibitem{interpolation_cambridge}
 \BIBentryALTinterwordspacing
 S.~McHugh, ``Digital image interpolation,'' 2005. [Online]. Available:
   \url{https://www.cambridgeincolour.com/tutorials/image-interpolation.htm}
 \BIBentrySTDinterwordspacing
-
-\bibitem{freeman}
-W.~T. Freeman, T.~R. Jones, and E.~C. Pasztor, ``Example-based
-  super-resolution,'' \emph{Image-Based Modeling, Rendering, and Lighting},
-  2002.
 
 \bibitem{diccionario_shuji}
 S.~Senda, T.~Shibata, and A.~Iketani, ``Example-based super resolution to
@@ -72,18 +84,6 @@ I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
 \bibitem{SRGAN_Tesis}
 L.~Calcagni, ``Redes generativas antagónicas y sus aplicaciones,'' Ph.D.
   dissertation, Universidad Nacional de la Plata, 04 2020.
-
-\bibitem{SRGAN}
-C.~Ledig, L.~Theis, F.~Huszar, J.~Caballero, A.~Acosta, A.~Aitken, A.~Tejani,
-  J.~Totz, Z.~Wang, and W.~Shi, ``Photo-realistic single image super-resolution
-  using a generative adversarial network,'' pp. 105--114, 07 2017.
-
-\bibitem{SRCNN}
-\BIBentryALTinterwordspacing
-C.~Dong, C.~C. Loy, K.~He, and X.~Tang, ``Image super-resolution using deep
-  convolutional networks,'' 2015. [Online]. Available:
-  \url{https://arxiv.org/abs/1501.00092}
-\BIBentrySTDinterwordspacing
 
 \bibitem{MIRFLICKR}
 M.~J. Huiskes and M.~S. Lew, ``The mir flickr retrieval evaluation,'' in
