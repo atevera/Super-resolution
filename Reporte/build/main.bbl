@@ -103,4 +103,8 @@ F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
  [Online]. Available: \url{https://scikit-learn/stable/modules/neighbors.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Resnet}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
+  recognition,'' vol.~7, 12 2015.
+
 \end{thebibliography}
