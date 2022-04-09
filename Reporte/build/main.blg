@@ -16,47 +16,48 @@ Database file #1: bibliografia.bib
 ** IEEEtran BST control entry "IEEEexample:BSTcontrol" detected.
 Warning--empty journal in SRGAN
 Warning--empty journal in SRCNN
+Warning--empty journal in Resnet
 
 Done.
-You've used 15 entries,
+You've used 16 entries,
             4087 wiz_defined-function locations,
-            910 strings with 9977 characters,
-and the built_in function-call counts, 7238 in all, are:
-= -- 498
-> -- 225
-< -- 20
-+ -- 116
-- -- 49
-* -- 353
-:= -- 1133
-add.period$ -- 28
-call.type$ -- 15
-change.case$ -- 14
+            914 strings with 10095 characters,
+and the built_in function-call counts, 7712 in all, are:
+= -- 531
+> -- 242
+< -- 21
++ -- 124
+- -- 53
+* -- 378
+:= -- 1211
+add.period$ -- 30
+call.type$ -- 16
+change.case$ -- 15
 chr.to.int$ -- 51
-cite$ -- 17
-duplicate$ -- 565
-empty$ -- 637
-format.name$ -- 56
-if$ -- 1623
+cite$ -- 19
+duplicate$ -- 606
+empty$ -- 676
+format.name$ -- 61
+if$ -- 1727
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 125
-newline$ -- 79
-num.names$ -- 10
-pop$ -- 371
+int.to.str$ -- 15
+missing$ -- 134
+newline$ -- 82
+num.names$ -- 11
+pop$ -- 394
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 523
+skip$ -- 557
 stack$ -- 0
-substring$ -- 132
-swap$ -- 376
-text.length$ -- 3
+substring$ -- 133
+swap$ -- 404
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 6
-type$ -- 15
-warning$ -- 2
-while$ -- 17
-width$ -- 16
-write$ -- 144
-(There were 2 warnings)
+type$ -- 16
+warning$ -- 3
+while$ -- 18
+width$ -- 17
+write$ -- 152
+(There were 3 warnings)
