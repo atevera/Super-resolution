@@ -1,0 +1,16 @@
+\subsection{SRCNN}
+Durante el desarrollo del módelo SRCNN se observó que, cuando se realiza el entrenamiento del módelo para un factor de escalamiento
+de \textbf{4}, ya sea en el espacio de color $RGB$ ó $YC_rC_b$ aparentemente se tiene una asintota en $0.003$ de la métrica $MSE$,
+y se requeriría realizar un re-entrenamiento de estos modelos para verificar o descartar la existencia de esta asintota. Para
+nuestro caso, decidimos detener el entrenamiento de la red en este punto, ya que observamos que la minimización de nuestra función
+de coste ($MSE$) era mínima. Lo mismo ocurre para los modelos SRCNN entrenados con un factor de escalamiento de 2 (En ambos
+espacios de color), pero en estos módelos, debido a que la imagen de entrenamiento en baja resolución no ha "perdido" tantos
+detalles respecto de la imagen original, es que su función de coste $MSE$ se logra reducir en mayor medida, observandose un valor
+aparentemente asintótico en $0.0012$, aunque de igual forma que para los modelos con factor de escalamiento 4, habría que re-entrenar
+el módelo para verificar esto. Cabe destacar que en este punto para mejorar los módelos es necesario ir ajustando la tasa de aprendizaje
+$\alpha$ del optimizador \textbf{Adam} de forma adecuada.\\
+Para el módelo entrenado en el espacio de color $YC_rC_b$ se utiliza únicamente el canal $Y$ para el entrenamiento de la red,
+esto por que es en este canal en el que se \emph{concentra} la mayor parte de la información de la imagén, ya que si observamos
+unicamente este canal por separado el resultado sería la imagen original pero en escala de grises, es por ello que resulta conveniente
+este módelo, dado que entrenar la red unicamente sobre un canal hace que la cantidad de parámetros de la red se reduzca, lo cual
+puede reducir el tiempo de entrenamiento de la red.
