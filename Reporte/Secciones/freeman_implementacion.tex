@@ -116,10 +116,9 @@ utilizando el algoritmo \emph{Ball Tree}.
     \label{fig:fr_vecinos}
 \end{figure}
 
-De igual forma en la Tabla \ref{fig:fr_vecinos} se presentan otros algoritmos 
-que de acuerdo a \cite{NN_search} cuenta la función utilizada. Note que 
-para fines de eficiencia, resulta más conviente el uso del algoritmo
-\emph{Ball Tree} para evitar consumo excesivo de tiempo. 
+Respecto a la complejidad temporal de cada algoritmo, se presenta en 
+la Tabla \ref{fig:fr_vecinos} otros algoritmos 
+que de acuerdo a \cite{NN_search} cuenta la función utilizada.
 
 \begin{table}[H]
     \caption{Tiempos de algoritmo de búsqueda}
@@ -127,11 +126,55 @@ para fines de eficiencia, resulta más conviente el uso del algoritmo
     \centering
     \begin{tabular}{|c|c|}
     \hline
-    Algoritmo    & Tiempo {[}s{]} \\ \hline
+    \textbf{Algoritmo}    & \textbf{Tiempo} {[}s{]} \\ \hline
     Auto         & 9.8            \\ \hline
     Fuerza Bruta & 9.5            \\ \hline
     KD Tree      & 9.5            \\ \hline
     Ball Tree    & 8.9            \\ \hline
     \end{tabular}
 \end{table}
+
+Note que para fines de eficiencia considerando $D$ como dimensiones 
+y $N$ como número de elementos, resulta más conviente el uso del algoritmo
+\emph{Ball Tree} dado que complejidad es $\mathcal{O}[D\,\text{log}|N| ]$,
+mientras que para el algoritmo de \emph{fuerza bruta} es
+$\mathcal{O}[D\,\text{log}|N| ]$. Por otro lado, el algoritmo \emph{KD Tree}
+tienen una complejidad $\mathcal{O}[D\,\text{log}|N| ]$ cuando $D$ es menor a 20
+dimensiones. Sin embargo, si $D$ aumenta, entonces su complejidad resulta
+$\mathcal{O}[D\,N]$. Por lo mismo, \emph{Ball Tree} es el algoritmo más rápido
+para esta aplicación dados los resultados de la Tabla \ref{tb:tiempos_snn}. 
+
+\subsubsection{Algoritmo de predicción}
+\noindent
+Teniendo ya el diccionario y el algoritmo de búsqueda, es posible aplicar el
+\emph{algoritmo de un paso} propuesto por \cite{freeman} para mejorar la 
+resolución de la imagen de entrada. Para ello nos basamos en el diagrama
+presentado en la Figura \ref{fig:fr_algoritmo} realizando cada uno de los 
+pasos mediante un paquete desarrollado por nosotros en Python. 
+
+En la Figura \ref{fig:fr_proceso} puede observarse el proceso realizado para mejorar 
+la resolución de la imagen ejemplo. Para este caso se ha considerado un escalado
+con factor  $\Omega=2$ y factor de superposición de $\alpha=0.05$.
+
+\begin{figure}[H]
+    \includegraphics[scale = 0.5]{ fr_proceso.png }
+    \centering
+    \caption{ Algoritmo de Súper Resolución}
+    \label{fig:fr_proceso}
+\end{figure}
+
+De igual manera se han realizado variaciones en el factor de superposición
+con el objetivo de encontrar el óptimo. En la Figura \ref{fig:fr_alphas}
+se presentan algunos de los valores utilizados. 
+
+\begin{figure}[H]
+    \includegraphics[scale = 0.4]{ fr_alphas.png }
+    \centering
+    \caption{ Variación en parámetro de superposición $\alpha$ }
+    \label{fig:fr_alphas}
+\end{figure}
+
+Observe que el parámetro de superposición permite enfatizar los detalles de
+la imagen de altas frecuencias e indirectamente los detalles de la
+imagen con mejor resolución. 
 
