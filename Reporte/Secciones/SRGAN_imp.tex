@@ -28,8 +28,16 @@ será de 128x128 pixeles, teniendo un escalado de 4 veces el tamaño original, a
 visualizarse en la imagen \ref{fig:fr_dataset}.
 
 
+Se comienza a crear el modelo generador utilizando bloques de
+redes residuales (Las redes residuales o ResNet fueron
+propuestas en 2015 por He et al. [), su finalidad es evitar del desvanecimiento del gradiente. Así, la particularidad
+que tienen las ResNet es que establecen conexiones salteándose algunas
+capas como se puede ver en la figura \ref{Alexis4}.
 
-
+Cada bloque de redes residuales se compone por dos redes convolucionales
+seguidas por una capa de normalización por lotes. Finalmente, hay una
+capa de adición que calcula la suma de la entrada al bloque y la salida
+de la última capa de normalización.
 
 
 \begin{figure}[H]
