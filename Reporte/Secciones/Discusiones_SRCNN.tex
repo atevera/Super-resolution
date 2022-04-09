@@ -1,4 +1,12 @@
-\subsection{SRCNN}
+% Filtros pasa altas para diferentes diccionarios
+Para la generación del diccionario del algoritmo de freeman se podría utilizar diferentes filtros pasa altas para obtener otros
+diccionarios, de forma que se observen los comportamientos que pueda tener en la generación del parchado de la imagen de
+alta resolución.\\
+% Factor alfa define el detalle de la imagen a reconstruir pero tambien genera ruido
+Se observó que el factor $\alpha$ afecta a lo que es el detalle de la imagen, pero a su vez este también genera ruido en la imágen,
+por lo que se debe buscar el punto óptimo para este valor, de manera que se balanceen de forma adecuada el detalle de la imagen
+así como el ruido que este factor puede generar.
+% Discusiones de SRCNN
 Durante el desarrollo del módelo SRCNN se observó que, cuando se realiza el entrenamiento del módelo para un factor de escalamiento
 de \textbf{4}, ya sea en el espacio de color $RGB$ ó $YC_rC_b$ aparentemente se tiene una asintota en $0.003$ de la métrica $MSE$,
 y se requeriría realizar un re-entrenamiento de estos modelos para verificar o descartar la existencia de esta asintota. Para
