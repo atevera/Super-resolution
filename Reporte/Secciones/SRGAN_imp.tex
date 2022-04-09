@@ -22,7 +22,7 @@ debido al tiempo de ejecución del entrenamiento, así como las limitantes de ha
 
 VGG19 (Visual Geometry Group) es la red convolucional pre-entrenado que se utilizara en el código
 dedicada a la clasificación de imágenes ,consta de 16 capas convolucionales, 3 capas completamente conectadas, 5 capas de 
-Maxpooling (Valores máximos de los parches)  y 1 capa de SoftMax como se observa en la imagen \ref{Alexis35}. El modelos se construyo
+Maxpooling (Valores máximos de los parches)  y 1 capa de SoftMax como se observa en la imagen \ref{Alexis35}. El modelos se construyó
  con imagenet(base de datos) cuya salida son las características de la imagen extraídas en el tercer bloque de el modelo (pesos),
  esta red será la que utilizaremos durante el entrenamiento con el fin de optimizar el proceso del entrenamiento de la red
 ya que sin el se saturaría el tiempo de ejecución.
@@ -30,7 +30,7 @@ ya que sin el se saturaría el tiempo de ejecución.
  
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[scale = 0.7]{VGG19.jpg}
+    \includegraphics[scale = 0.4]{VGG19.png}
     \caption{Arquitectura de la red VGG19}
     \label{Alexis35}
   \end{center}
@@ -54,12 +54,17 @@ capas como se puede ver en la figura \ref{Alexis4}.
 Cada bloque de redes residuales se compone por dos redes convolucionales
 seguidas por una capa de normalización por lotes. Finalmente, hay una
 capa de adición que calcula la suma de la entrada al bloque y la salida
-de la última capa de normalización. Se utiliza la función de activación
+de la última capa de normalización. Se utiliza la función de activación, que nos ayuda a indicar cuando
+se enciendo o apaga la neurona. En este modelo utilizamos la función 
 PReLu (Parametric ReLu) con la cual multiplica cualquier valor negativo de la neurona
 por un valor pequeño aproximado a 0.
 
 
+El bloque de upsampling es el que nos ayudara a realizar el escalado de la imagen conforme al entrenamiento,
+se encarga de realizar un aumento de pixeles mediante interpolaciones de vecino cercano para cada 
+capa de convolución lo que se interpreta en un suavizado de la imagen y así mismo un aumento de tamaño.
 
+La arquitectura completa del modelo generador se puede ver en la imagen \ref{Alexis4}.
 
 
 \begin{figure}[H]
@@ -73,6 +78,14 @@ por un valor pequeño aproximado a 0.
 \end{figure}
 
 \subsubsection{Modelo discriminador.}
+
+El modelo discriminador se asemeja mucho en la parte de la red neuronal a la arquitectura del modelo generador,
+pero varia en la función de activación el cual estima un valor cercano a 0 que no depende de la red neuronal como tal, sino que
+es constante además de esto, tenemos que la salida de este modelo es una probabilidad de que la imagen del modelo generador sea tomada
+como una real y a partir de esto clasificarla como un 1 o u 0 (Clasificador Binario) es por esto que nuestra salida es una función 
+\emph{Sigmoide}, ya que abarca valores de 0 a 1.
+
+La arquitectura completa del modelo Discriminador se puede ver en la imagen \ref{Alexis5}.
 
 \begin{figure}[H]
   \begin{center}
@@ -88,7 +101,7 @@ por un valor pequeño aproximado a 0.
 
 EL modelo de entrenamiento de las GAN´s como se ha mencionado en \cite{GANs} y \cite{SRGAN}, es un proceso en el cual
 los dos modelos compiten, el generador por engañar al discriminador y el discriminador por no permitirlo, en la figura \ref{Alexis6}
-podemos ver el proceso en el cual se basa el entrenamiento.
+podemos ver este proceso.
 
 \begin{figure}[H]
     \begin{center}
@@ -98,6 +111,11 @@ podemos ver el proceso en el cual se basa el entrenamiento.
     \end{center}
 \end{figure}
 
+Con la implementación del código en \emph{python} dadas las arquitecturas de ambos modelos (Generador y discriminador) 
+se realiza un entrenamiento de la red GAN el cual se basa en obtener los Batches de imágenes los cuales son el conjunto
+de datos utilizados por cada iteración dado un numero concreto de imágenes y un numero d épocas que no son mas que los ciclos
+del algoritmo donde los datos pasan por la red neuronal. Se utiliza el optimizador Adam, antes descrito y la función \emph{Binary Crossentropy}
+la cual se encarga de obtener las perdidas basándose en la clasificación del discriminador.
 
 Después de realizar las épocas de entrenamiento se puede apreciar que a mayor numero de imágenes y 
 épocas los resultados suelen ser mejores sobre todo para imágenes que no están en el dataset,en la imagen
