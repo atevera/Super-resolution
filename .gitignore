@@ -8,3 +8,15 @@ Reporte/build/main.synctex.gz
 Reporte/build/main.pdf
 *.pdf
 *.gz
+Presentación/build/main_diapos.aux
+Presentación/build/main_diapos.bbl
+Presentación/build/main_diapos.fdb_latexmk
+Presentación/build/main_diapos.blg
+Presentación/build/main_diapos.fls
+Presentación/build/main_diapos.log
+Presentación/build/main_diapos.nav
+Presentación/build/main_diapos.out
+Presentación/build/main_diapos.snm
+Presentación/build/main_diapos.toc
+Presentación/build/
+./Presentación/build/
