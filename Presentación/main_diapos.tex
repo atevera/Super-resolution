@@ -1,0 +1,93 @@
+\documentclass{beamer}
+
+\input{paquetes.tex}
+\decimalpoint 
+\usefonttheme[onlymath]{serif}
+\setlength{\columnsep}{0.3mm}
+\usetheme{Frankfurt}
+
+\author[Visión por Computadora]{Madrigal-Custodio Jesús A., Tevera-Ruiz Alejandro, Torres-Martínez Luis Á.}
+\title{Súper-resolución de imágenes}
+\subtitle{Comparativa de métodos}
+\institute[CINVESTAV]{Maestría en Ciencias en Robótica y Manufactura Avanzada}
+\date{12 de abril de 2022}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred}, 
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+% Extras
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\graphicspath{ {./Imagenes/} }
+% Control de tamaño de imágenes por variable
+\newcommand{\scaleFigures}{0.7}
+
+\graphicspath{ {Imagenes/} }
+
+\begin{document}
+
+\renewcommand{\tablename}{Tabla}
+
+\begin{frame}
+    \titlepage
+    \begin{figure}[h]
+        \begin{center}
+            \includegraphics[width=0.1\linewidth]{Cinvestav.jpg}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+
+\section{Introducción}
+    \input{Secciones/introduccion.tex}
+
+\section{Antecedentes}
+    \input{Secciones/fr_antecedentes.tex}
+    \input{Secciones/srcnn_antecedentes.tex}
+    \input{Secciones/srgan_antecedentes.tex}
+
+\section{Implementación}
+    \input{Secciones/fr_implementacion.tex}
+    \input{Secciones/srcnn_implementacion.tex}
+    \input{Secciones/srgan_implementacion.tex}
+
+
+\section{Resultados}
+    \input{Secciones/resultados.tex}
+
+\section{Conclusiones}
+    \input{Secciones/conclusiones.tex}
+
+\section{Código}
+    \begin{frame}{Código}
+        Presentación de código
+    \end{frame}
+
+\section{Discusiones}
+    \input{Secciones/discusiones.tex}
+
+\section{Referencias}
+    \input{Secciones/Referencias.tex}
+
+\end{document}

@@ -1,0 +1,44 @@
+\begin{frame}{Diagrama de bloques - Simulador Dinámico (1/2)}
+    \begin{equation}
+        \label{eqn:modelo_simulink}
+            \boldsymbol{\ddot{q}} =H_e(\boldsymbol{q})^{-1} \begin{Bmatrix}
+                \boldsymbol{\boldsymbol{\tau}} - C(\boldsymbol{q}, \boldsymbol{\dot{q}}) \boldsymbol{\dot{q}}
+                        - D_e(\cdot)\boldsymbol{\dot{q}} - \boldsymbol{g}(\boldsymbol{q})
+            \end{Bmatrix}
+    \end{equation}
+    
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[scale=0.34]{Imagenes/Dinamica_Directa.PNG}
+            \caption{Sección - Dinámica Directa}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Diagrama de bloques - Simulador Dinámico (2/2)}
+    Considerando al solucionador \textbf{ode15s} de paso variable para ecuaciones diferenciales rígidas,
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[scale=0.3]{Imagenes/B_Dinam_Dir.PNG}
+            \caption{Sección - Modelo Dinámico}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Diagrama de bloques - Control}
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[width=0.95\linewidth]{Imagenes/Control.png}
+            \caption{Sección - Control}
+        \end{center}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Diamgra de bloques - Análisis Energético}
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[width=0.7\linewidth]{Imagenes/An_Elect.PNG}
+            \caption{Sección - Energía}
+        \end{center}
+    \end{figure}
+\end{frame}

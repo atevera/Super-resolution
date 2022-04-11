@@ -1,0 +1,81 @@
+\subsection{Validación de comportamiento energético}
+\begin{frame}{Parámetros de análisis}
+    \begin{table}[H]%[!ht]
+        \centering
+        \begin{center}
+        \caption{Parámetros sistema conservativo} 
+        \centering
+        \scalebox{0.8}{
+            \begin{tabular}{c||cccccc|c}
+            Parámetros & $\tau_1$ & $\tau_2$ & $\tau_3$ & $\tau_4$ & $\tau_5$ & $\tau_6$ & Unidades\\
+            \hline
+            Torques & 0 & 0 & 0 & 0 & 0 & 0 & [Nm] \\
+            Factor de Disipación & \multicolumn{6}{c|}{0} & [Ns/m] \\
+            Tiempo de Simulación & \multicolumn{6}{c|}{20} & [s]\\
+            \hline 
+            \end{tabular}}
+        \end{center}
+        \label{ref:TablaC3}
+    \end{table}
+    \begin{table}[H]
+        \centering
+        \begin{center}
+            \caption{Parámetros sistema no conservativo} 
+            \centering
+            \scalebox{0.8}{
+                \begin{tabular}{c||cccccc|c}
+                    Parámetros & $\tau_1$ & $\tau_2$ & $\tau_3$ & $\tau_4$ & $\tau_5$ & $\tau_6$ & Unidades\\
+                    \hline
+                    Torques & 0 & 0 & 0 & 0 & 0 & 0 & [Nm] \\
+                    Factor de disipación & \multicolumn{6}{c|}{0.004} & [Ns/m] \\
+                    Tiempo de simulación & \multicolumn{6}{c|}{20} & [s]\\
+                    \hline 
+                \end{tabular}}
+            \end{center}
+            \label{tb:C1}
+        \end{table}
+\end{frame}
+
+\begin{frame}{Visualización de tipos de sistemas}
+    \begin{figure}[H]
+        \includegraphics[scale = 0.5]{Sistema conservativo/caso_conservativo.png }
+        \centering
+        \caption{ Sistema conservativo }
+        \label{fig:sistema_conservativo}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Visualización de tipos de sistemas}
+    \begin{figure}[H]
+        \includegraphics[scale = 0.5]{Sistema no conservativo/comportEner.png }
+        \centering
+        \caption{ Sistema no conservativo }
+        \label{fig:sistema_no_conservativo}
+    \end{figure}
+\end{frame}
+
+\subsection{Análisis energético de leyes de control}
+\begin{frame}{Parámetros de análisis}
+    Con base en la Tabla \ref{tb:Tabla_sim},
+    \begin{table}[H]%[!ht]
+        \centering
+        \begin{center}
+        \caption{Parámetros sistema conservativo} 
+        \centering
+        \scalebox{0.8}{
+            \begin{tabular}{c||cccccc|c}
+            Parámetros & $q^d_1$ & $q^d_2$ & $q^d_3$ & $q^d_4$ & $q^d_5$ & $q^d_6$ & Unidades\\
+            \hline
+            $\boldsymbol{q}^d$ & 90 & 30 & 55 & 10 & 40 & 45 & [°] \\
+            Tiempo de simulación & \multicolumn{6}{c|}{40} & [s]\\
+            Tiempo de asentamiento $t_s$ & \multicolumn{6}{c|}{0.5} & [s]\\
+            Factor de disipación & \multicolumn{6}{c|}{0.004} & [Ns/m] \\
+            Factor de amortiguamiento $\xi$ & \multicolumn{6}{c|}{1} & [s]\\
+            \hline 
+            \end{tabular}}
+        \end{center}
+        \label{tb:Tabla_sim}
+    \end{table}
+    se realizó un comparativo energético de cada articulación con principal 
+    enfoque en su respuesta transitoria sin descuidar su respuesta en estado estacionario. 
+\end{frame}
