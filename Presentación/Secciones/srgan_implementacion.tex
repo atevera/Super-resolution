@@ -19,7 +19,7 @@
 
 \end{frame}
 
-\begin{frame}{Modelo Discriminador}
+\begin{frame}{Modelo Generador}
     
 
     El modelo SRGAN (Super Resolution Generative Adversarial Network) fue
@@ -42,14 +42,43 @@
 
 
 
-\begin{frame}{Modelo Discriminador}
-    
-
-        
+\begin{frame}{Redes residuales}
+    \begin{block}{Bloque Residual}
+        hacen la conexión entre capas anteriores con capas futuras (saltos) sin que la información de 
+        las características extraídas en capas previas se diluya.
+    \end{block}
     \begin{figure}[H]
         \begin{center}
-          \includegraphics[scale = 0.5]{Imp_generador.png}
-          \caption{Modelo de entrenamiento del generador}
+          \includegraphics[scale = 0.4]{Residual-Block.png}
+          \caption{Funcionamiento del Bloque Residual}
+          \label{Alexis10}
+        \end{center}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Bloques de escalado}
+    \begin{figure}[H]
+        \begin{center}
+          \includegraphics[scale = 0.4]{Bilinear2x.jpg}
+          \caption{Red Neuronal Pre-entrenada}
+          \label{Alexis5}
+        \end{center}
+    \end{figure}
+     
+\end{frame}
+
+\begin{frame}{VGG19}
+    
+\begin{block}{Red Pre-entrenada}
+    Se utiliza una red de entrenamiento pre-entrenada conocida como VGG19
+    la cual nos da los pesos necesarios
+\end{block}
+    \begin{figure}[H]
+        \begin{center}
+          \includegraphics[scale = 0.18]{VGG19.png}
+          \caption{Red Neuronal Pre-entrenada}
           \label{Alexis5}
         \end{center}
     \end{figure}
@@ -62,7 +91,7 @@
     
     \begin{figure}[H]
         \begin{center}
-          \includegraphics[scale = 0.5]{13im_200E.png}
+          \includegraphics[scale = 0.6]{13im_200E.png}
           \caption{Modelo de entrenamiento del generador}
           \label{Alexis6}
         \end{center}
@@ -74,7 +103,7 @@
     
     \begin{figure}[H]
         \begin{center}
-          \includegraphics[scale = 0.5]{50im_400E.png}
+          \includegraphics[scale = 0.6]{50im_400E.png}
           \caption{Modelo entrenado con 50 imágenes y 400 épocas}
           \label{Alexis7}
         \end{center}
@@ -89,6 +118,18 @@
         \begin{center}
           \includegraphics[scale = 0.5]{1000im_5E_Reentrenado.png}
           \caption{Modelo reentrenado 1000 imágenes, 5 épocas}
+          \label{Alexis8}
+        \end{center}
+    \end{figure}
+     
+\end{frame}
+
+\begin{frame}{Perdidas del modelo}
+    
+    \begin{figure}[H]
+        \begin{center}
+          \includegraphics[scale = 0.5]{Graficasperdidas.png}
+          \caption{Pérdidas y Precisión del Modelo}
           \label{Alexis8}
         \end{center}
     \end{figure}
