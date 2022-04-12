@@ -73,8 +73,7 @@
     
 \begin{block}{Red Pre-entrenada}
     VGG19 (Visual Geometry Group) es la red convolucional pre-entrenado que se utiliza en el código,
-    dedicada a la clasificación de imágenes ,consta de 16 capas convolucionales, 3 capas completamente conectadas, 5 capas de 
-    Maxpooling (Valores máximos de los parches)  y 1 capa de SoftMax.
+    dedicada a la clasificación de imágenes ,consta de 16 capas convolucionales.
 \end{block}
     \begin{figure}[H]
         \begin{center}
@@ -89,13 +88,13 @@
 
 \begin{frame}{Binary Crossentropy}
 \begin{block}{Binary Crossentropy}
-    Con esta función logramos realizar la clasificación de probabilidades del discriminador
+    Con esta función se logra realizar la clasificación de probabilidades del discriminador
     (0 a 1) y castiga al modelo en caso de que exista un dato catalogado erróneo.
 \end{block}
     \begin{figure}[H]
         \begin{center}
-          \includegraphics[scale = 0.18]{bina.png}
-          \caption{Red Neuronal Pre-entrenada}
+          \includegraphics[scale = 0.18]{binarycross.png}
+          \caption{Función binaria}
           \label{Alexis12}
         \end{center}
     \end{figure}
@@ -145,6 +144,20 @@
      
 \end{frame}
 
+
+\begin{frame}{Pérdidas del modelo}
+    \begin{block}{Función de pérdida}
+        
+   
+        Como parte del entrenamiento se necesitan parámetros que nos describan de manera correcta los resultados
+        que obtenemos de la predicción en nuestra red neuronal, para esto se hace el uso de funciones de perdida, estas funciones 
+        evalúan la desviación entre las predicciones realizadas por la red neuronal y los valores 
+        reales de las observaciones utilizadas durante el aprendizaje. A esta función se le conoce como perdida perceptual. Cuanto menor es el resultado de esta función, 
+        más eficiente es la red neuronal.
+
+    \end{block}    
+\end{frame}
+
 \begin{frame}{Pérdidas del modelo}
     
     \begin{figure}[H]
@@ -156,3 +169,5 @@
     \end{figure}
      
 \end{frame}
+
+
