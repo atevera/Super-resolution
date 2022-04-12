@@ -1,13 +1,10 @@
 \begin{frame}{Modelo Discriminador}
     
-
-    El modelo SRGAN (Super Resolution Generative Adversarial Network) fue
-    propuesto en 2016 por un grupo de investigadores de la empresa Twitter.
-    La principal innovación de este modelo es su función de pérdida, llamada
-    función de pérdida perceptual, que permite mejorar el realismo de la imagen de
-    salida.
-
-        
+    \begin{block}{Modelo}
+        La salida de este modelo es una probabilidad de que la imagen del modelo generador sea tomada
+        como una real y a partir de esto clasificarla como un 1 o u 0 (Clasificador Binario) es por esto que nuestra salida es una función 
+        \emph{Sigmoide}, ya que abarca valores de 0 a 1.
+    \end{block}  
     \begin{figure}[H]
         \begin{center}
           \includegraphics[scale = 0.5]{Imp_discriminador.png}
@@ -21,13 +18,10 @@
 
 \begin{frame}{Modelo Generador}
     
-
-    El modelo SRGAN (Super Resolution Generative Adversarial Network) fue
-    propuesto en 2016 por un grupo de investigadores de la empresa Twitter.
-    La principal innovación de este modelo es su función de pérdida, llamada
-    función de pérdida perceptual, que permite mejorar el realismo de la imagen de
-    salida.
-
+    \begin{block}{Modelo}
+        En este modelo la entrada es un vector de ruido aleatorio\emph{(z)} se da como señal de entrada 
+        y se espera una imagen falsa como salida, esta imagen deberá aproximarse a la real.
+    \end{block} 
         
     \begin{figure}[H]
         \begin{center}
@@ -44,12 +38,12 @@
 
 \begin{frame}{Redes residuales}
     \begin{block}{Bloque Residual}
-        hacen la conexión entre capas anteriores con capas futuras (saltos) sin que la información de 
+        Realizan la conexión entre capas anteriores con capas futuras (saltos) sin que la información de 
         las características extraídas en capas previas se diluya.
     \end{block}
     \begin{figure}[H]
         \begin{center}
-          \includegraphics[scale = 0.4]{Residual-Block.png}
+          \includegraphics[scale = 0.2]{Residual-Block.png}
           \caption{Funcionamiento del Bloque Residual}
           \label{Alexis10}
         \end{center}
@@ -59,11 +53,17 @@
 
 
 \begin{frame}{Bloques de escalado}
+    \begin{block}{Escalado}
+        
+        El bloque de upsampling es el que nos ayudara a realizar el escalado de la imagen conforme al entrenamiento,
+        se encarga de realizar un aumento de pixeles mediante interpolaciones de vecino cercano para cada 
+        capa de convolución lo que se interpreta en un suavizado de la imagen y así mismo un aumento de tamaño.
+    \end{block}
     \begin{figure}[H]
         \begin{center}
-          \includegraphics[scale = 0.4]{Bilinear2x.jpg}
-          \caption{Red Neuronal Pre-entrenada}
-          \label{Alexis5}
+          \includegraphics[scale = 0.6]{Bilinear2x.jpg}
+          \caption{Escalado de la imagen de entrada}
+          \label{Alexis11}
         \end{center}
     \end{figure}
      
@@ -72,23 +72,41 @@
 \begin{frame}{VGG19}
     
 \begin{block}{Red Pre-entrenada}
-    Se utiliza una red de entrenamiento pre-entrenada conocida como VGG19
-    la cual nos da los pesos necesarios
+    VGG19 (Visual Geometry Group) es la red convolucional pre-entrenado que se utiliza en el código,
+    dedicada a la clasificación de imágenes ,consta de 16 capas convolucionales, 3 capas completamente conectadas, 5 capas de 
+    Maxpooling (Valores máximos de los parches)  y 1 capa de SoftMax.
 \end{block}
     \begin{figure}[H]
         \begin{center}
           \includegraphics[scale = 0.18]{VGG19.png}
           \caption{Red Neuronal Pre-entrenada}
-          \label{Alexis5}
+          \label{Alexis12}
         \end{center}
     \end{figure}
      
 
 \end{frame}
 
+\begin{frame}{Binary Crossentropy}
+\begin{block}{Binary Crossentropy}
+    Con esta función logramos realizar la clasificación de probabilidades del discriminador
+    (0 a 1) y castiga al modelo en caso de que exista un dato catalogado erróneo.
+\end{block}
+    \begin{figure}[H]
+        \begin{center}
+          \includegraphics[scale = 0.18]{bina.png}
+          \caption{Red Neuronal Pre-entrenada}
+          \label{Alexis12}
+        \end{center}
+    \end{figure}
+     
+
+\end{frame}
 
 \begin{frame}{Modelos Generadores obtenidos}
-    
+    \begin{block}{Modelo del entrenamiento.}
+        Se obtiene un archivo comprimido, con los datos del modelo generador en este caso.
+    \end{block}
     \begin{figure}[H]
         \begin{center}
           \includegraphics[scale = 0.6]{13im_200E.png}
@@ -100,7 +118,7 @@
 \end{frame}
 
 \begin{frame}{Modelos Generadores obtenidos}
-    
+  
     \begin{figure}[H]
         \begin{center}
           \includegraphics[scale = 0.6]{50im_400E.png}
@@ -113,10 +131,13 @@
 
 
 \begin{frame}{Modelos Generadores obtenidos}
-    
+    \begin{block}{Re-entrenamiento}
+        Se puede cargar una configuración del modelo generador anterior, esto disminuye las pérdidas 
+        debido a los pesos y criterio del entrenamiento.
+    \end{block}
     \begin{figure}[H]
         \begin{center}
-          \includegraphics[scale = 0.5]{1000im_5E_Reentrenado.png}
+          \includegraphics[scale = 0.6]{1000im_5E_Reentrenado.png}
           \caption{Modelo reentrenado 1000 imágenes, 5 épocas}
           \label{Alexis8}
         \end{center}
@@ -124,13 +145,13 @@
      
 \end{frame}
 
-\begin{frame}{Perdidas del modelo}
+\begin{frame}{Pérdidas del modelo}
     
     \begin{figure}[H]
         \begin{center}
-          \includegraphics[scale = 0.5]{Graficasperdidas.png}
+          \includegraphics[scale = 0.4]{Graficasperdidas.png}
           \caption{Pérdidas y Precisión del Modelo}
-          \label{Alexis8}
+          \label{Alexis13}
         \end{center}
     \end{figure}
      
